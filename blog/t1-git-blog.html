@@ -24,7 +24,20 @@
       Finally, we would write up a consultative report for the clinic managers, which meant we had to choose the most important findings each person had found and merge them back into one document. The bosses were kind of old-fashioned, so they usually wanted everything printed out. Because of this we had to make sure that not only file names, but also every page of every document had a version number and date on it. Sometimes one person's figures didn't match up with another person's figures, and we'd realize one of them was making calculation off the wrong version of the dataset!
     </p>
     <p>
-      TLDR: trying to do version control manually is a pain in the butt and prone to errors.
+      Anyways, that model of version control wasn't quite the same as git, but it shared the same goals:
+      <ul>
+        <li>
+          Don't muck with the master version unless you're really, really sure.
+        </li>
+        <li>
+          Allow lots of people to work on the same content at the same time
+        </li>
+        <li>
+          Be able to track changes incrementally, by date and author.
+        </li>
+      </ul>
+    <p>
+      <strong>TLDR: trying to do version control manually is a pain in the ass and prone to errors.</strong>
     </p>
     <p>
       git creates a much better framework for project collaboration. You can make a copy of someone else's project by forking. Then you can branch from that copy to work on separate version or component without affecting the master's functionality. git also provides really thorough functionality for documenting and syncing changes. It actually <em>won't let</em> you commit a change without a note, which is awesome.

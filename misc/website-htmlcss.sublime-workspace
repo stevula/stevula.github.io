@@ -31,6 +31,25 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/D/DBC/stevula.github.io/index.html",
+			"settings":
+			{
+				"buffer_size": 1669,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "/* Organization convention of this file:\nCode is broken up into sections based on order of appearance in the DOM:\n1. General\n2. Body\n3. Header\n4. Main\n5. Footer\nSubclass selectors are nested under parent. */\n\n/* General */\n\n\n/* Body */\nbody {\n  font-family: \"Lucida Sans\";\n}\n\n/* Header */\nheader h1 {\n  text-align: center;\n  width: 41%;\n  display: inline-block;\n}\n\nnav {\n  text-align: left;\n  width: 55%;\n  display: inline-block;\n  text-transform: uppercase;\n}\n  nav ul {\n    width: 100%;\n    padding: 0;\n    display: inline-block;\n  }\n  nav li {\n    display: inline-block;\n    margin-left: 5%;\n    margin-right: 5%;\n  }\n  nav a {\n    text-decoration: none;\n    color: gray;\n  }\n    nav a:hover {\n      text-decoration: underline;\n      color: teal;\n    }\n\n\n/* Main */\nmain {\n  margin-top: 5%;\n  margin-bottom: 5%;\n  height: 80%;\n}\n\n#portrait {\n    display: inline-block;\n    height: 216px\n;    width: 41%;\n}\n  #portrait img {\n    width: 233px;\n    height: 216px;\n    border: 0;\n    display: block;\n    margin: auto;\n  }\n\n#bio {\n  vertical-align: top;\n  height: 216px;\n  display: inline-block;\n  width: 55%;\n  position: relative;\n}\n  #bio div {\n    width: 95%;\n    height: 95%;\n    position: absolute;\n    margin: auto;\n    top: 0; bottom: 0; left: 5%;\n  }\n\n/* Footer */\nfooter {\n  text-align: center;\n  width: 100%;\n\n}\n  footer div {\n    display: inline;\n  }\n",
+			"file": "/D/DBC/stevula.github.io/stylesheets/default.css",
+			"file_size": 1454,
+			"file_write_time": 130874295161584863,
+			"settings":
+			{
+				"buffer_size": 1360,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -173,8 +192,67 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/D/DBC/stevula.github.io/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1252,
+								1253
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/DBC/stevula.github.io/stylesheets/default.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1256,
+								1256
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 990.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],

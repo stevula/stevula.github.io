@@ -1,0 +1,267 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"color",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/stevenbroderick/DBC/stevula.github.io/blog/blog-template.html",
+		"/Users/stevenbroderick/DBC/stevula.github.io/blog/index.html",
+		"/Users/stevenbroderick/DBC/stevula.github.io/index.html",
+		"/Users/stevenbroderick/DBC/stevula.github.io/stylesheets/default.css",
+		"/Users/stevenbroderick/DBC/stevula.github.io/blog/t1-git-blog.html",
+		"/Users/stevenbroderick/GoogleDrive/Ruby/ChrisPine/2nd_Ed/10.bubble_sort.rb",
+		"/Users/stevenbroderick/GoogleDrive/Ruby/ChrisPine/2nd_Ed/10.shuffle",
+		"/Users/stevenbroderick/GoogleDrive/Ruby/ChrisPine/2nd_Ed/10.recursive_sort.rb",
+		"/Users/stevenbroderick/GoogleDrive/Ruby/ChrisPine/2nd_Ed/test.rb",
+		"/Users/stevenbroderick/GoogleDrive/Ruby/ChrisPine/2nd_Ed/test",
+		"/Users/stevenbroderick/dbc/phase-0/.git/MERGE_MSG",
+		"/Users/stevenbroderick/DBC/phase-0/week-2/responsive-design/index.html",
+		"/Users/stevenbroderick/DBC/phase-0/week-2/responsive-design/stylesheet.css",
+		"/Users/stevenbroderick/dbc/stevula.github.io/.git/MERGE_MSG",
+		"/Users/stevenbroderick/dbc/phase-0-pps-2.7/blog-template.html",
+		"/Users/stevenbroderick/DBC/phase-0-pps-2.7/blog-template.html",
+		"/Users/stevenbroderick/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/stevenbroderick/dbc/phase-0/week-2/responsive-design/open",
+		"/Users/stevenbroderick/dbc/phase-0/week-2/responsive-design/index.html",
+		"/Users/stevenbroderick/dbc/week-2-2.6/berkshire/my-berkshire-site.html",
+		"/Users/stevenbroderick/dbc/stevula.github.io/blog/index.html",
+		"/Users/stevenbroderick/dbc/stevula.github.io/index.html",
+		"/Users/stevenbroderick/dbc/phase-0-gps-1/Broderick-reflection.md",
+		"/Users/stevenbroderick/DBC/phase-0-gps-1/GPS 1.1 Reflection.md",
+		"/Users/stevenbroderick/dbc/phase-0-gps-1/GPS",
+		"/Users/stevenbroderick/dbc/phase-0-gps-1/1.1",
+		"/Users/stevenbroderick/dbc/phase-0-gps-1/Reflection.md",
+		"/Users/stevenbroderick/dbc/phase-0-gps-1/gps*",
+		"/Users/stevenbroderick/dbc/phase-0-gps-1/reflection*",
+		"/Users/stevenbroderick/dbc/phase-0-gps-1/awesome_page.md",
+		"/Users/stevenbroderick/dbc/awesome_page.md",
+		"/Users/stevenbroderick/dbc/awesome*",
+		"/Users/stevenbroderick/DBC/p0-cli-exploration/README.md",
+		"/Users/stevenbroderick/dbc/phase-0/week-2/wire-frame-reflection.md",
+		"/Users/stevenbroderick/DBC/phase-0/week-2/design-reflection.md",
+		"/Users/stevenbroderick/dbc/phase-0/week-2/design-reflection.md",
+		"/Users/stevenbroderick/DBC/phase-0/p0-cli-exploration/grep_and_find/been/twee/drie/vier/vijf/message.txt",
+		"/Users/stevenbroderick/DBC/phase-0/p0-cli-exploration/grep_and_find/alpha/beta/gamma/delta/message.txt",
+		"/Users/stevenbroderick/DBC/phase-0/p0-cli-exploration/grep_and_find/winestore-db-dump.sql",
+		"/Users/stevenbroderick/DBC/phase-0/p0-cli-exploration/pushd_popd_ville/head_home",
+		"/Users/stevenbroderick/DBC/stevula.github.io/blog/5335.html",
+		"/Users/stevenbroderick/DBC/phase-0/week-1/my-website-1-reflection.md",
+		"/Users/stevenbroderick/DBC/stevula.github.io/.git/COMMIT_EDITMSG",
+		"/Users/stevenbroderick/DBC/phase-0/week-1/tracking-changes-reflection.md",
+		"/Users/stevenbroderick/DBC/phase-0/.git/COMMIT_EDITMSG",
+		"/Users/stevenbroderick/DBC/phase-0/.git/MERGE_MSG",
+		"/Users/stevenbroderick/DBC/phase-0/week-1/reflections.md",
+		"/Users/stevenbroderick/temp/testing.txt",
+		"/Users/stevenbroderick/dotfiles/README.md",
+		"/Users/stevenbroderick/temp/ex13.txt",
+		"/Users/stevenbroderick/Desktop/ex12.txt",
+		"/Users/stevenbroderick/GoogleDrive/Ruby/ChrisPine/2nd_Ed/10.bubble_sort",
+		"/Users/stevenbroderick/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/stevenbroderick/GoogleDrive/Ruby/ChrisPine/2nd_Ed/10.recursive_sort"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"portrait-cont",
+			"portrait-container",
+			"block",
+			"6",
+			"p r",
+			"p ",
+			"p",
+			"  while !sort.check(some_array)\n",
+			"check",
+			"img",
+			"content",
+			"img",
+			"content",
+			"img",
+			"content",
+			"side",
+			"block",
+			"side",
+			"side-b",
+			"side-a"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 247.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Ruby/Ruby.sublime-build",
+	"project": "website-htmlcss.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

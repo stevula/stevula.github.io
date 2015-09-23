@@ -8,39 +8,38 @@
   <meta name="author" content="Steven Broderick">
   <meta name="description" content="Personal Website for Steven Broderick">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 </head>
 
 <body>
+  <div class="wrapper">
+    <header>
+      <h1>Steven J. Broderick</h1>
+      <nav>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header>
-    <h1>Steven J. Broderick</h1>
-    <nav>
-      <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="/blog/index.html">Blog</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <article>
+    <main>
 
       <header>
-        <h2>Blog</h2>
         <div class="blog-post-nav">
-          <a href="#"><img src="../imgs/right-arrow.png" alt="next post"></a>
-          <a href="#"><img src="../imgs/left-arrow.png" alt="previous post"></a>
+          <a href="index.html">Back to blog index</a>
+          <a href="#">Older post</a>
+          <a href="#">Newer post</a>
         </div>
       </header>
 
-      <article>
+      <article class="main-article">
 
         <header>
-          <h3>Most recent blog post</h3>
-          <p>September 15</p>
-          <p>Posted in category, category, category</p>
+          <h2 class="blog-title">Title of blog post</h2>
+          <p class="date">Date</p>
         </header>
 
         <p>
@@ -58,47 +57,32 @@
 
       </article>
 
-    </article>
+    </main>
 
     <aside>
-
-      <section>
-        <h3>About Steven Broderick</h3>
-        <img src="http://placehold.it/150x150/ff0000/000000?text=steven+broderick" alt="Steven Broderick">
-        <div class="twitter-follow">
-          <img src="http://placehold.it/32x32/ff0000/000000?text=twitter" alt="twitter">
-          <button>Follow @benissimus</button>
-        </div>
+      <div id="portrait">
+        <img src="../imgs/portrait.png" alt="avatar">
+      </div>
+      <p id="summary">Pointless ruminations</p>
+      <section id="menu">
+        <ul id="months">
+          <li><a href="">September (1)</a></li>
+        </ul>
       </section>
-
-      <section>
-        <h4>Bio</h4>
-        <p>
-          Four dollar toast food truck tofu, Neutra mixtape four loko disrupt fanny pack sustainable chambray ethical. Listicle Tumblr taxidermy bespoke, authentic disrupt squid Blue Bottle. Shabby chic McSweeney's yr, chillwave cliche meh keytar. Bespoke cray letterpress, cardigan mlkshk trust fund XOXO biodiesel banjo fashion axe dreamcatcher meditation. Crucifix trust fund Austin American Apparel next level, dreamcatcher pour-over plaid lumbersexual seitan fanny pack ennui kale chips semiotics. Fixie hashtag flexitarian narwhal. Hella mlkshk cronut Austin 90's, bicycle rights keffiyeh.
-        </p>
-
-      </section>
-
-      <section>
-        <h4>Contact</h4>
-        <a href="mailto:brodericksteven@gmail.com"><img src="http://placehold.it/32x32/ff0000/000000?text=email" alt="Email"></a>
-        <a href="#"><img src="http://placehold.it/32x32/ff0000/000000?text=linkedin" alt="LinkedIn"></a>
-        <a href="#"><img src="http://placehold.it/32x32/ff0000/000000?text=github" alt="GitHub"></a>
-      </section>
-
     </aside>
 
-  </main>
 
-  <footer>
-    <div id="social-media">
-      <a href=""><img src="" alt="GitHub"></a>
-      <a href=""><img src="" alt="Twitter"></a>
-      <a href=""><img src="" alt="LinkedIn"></a>
-    </div>
-    <p>Copyright &copy; 2015 Steven Broderick</p>
-  </footer>
-
+    <footer>
+      <div id="social-media">
+        <!-- add social media icons later, possibly with bootstrap -->
+        <a href=""><img src="../imgs/gmail.png" alt="Gmail"></a>
+        <a href=""><img src="../imgs/github.png" alt="GitHub"></a>
+        <a href=""><img src="../imgs/twitter.png" alt="Twitter"></a>
+        <a href=""><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+      </div>
+      <p>Copyright &copy; 2015 Steven Broderick</p>
+    </footer>
+  </div>
 </body>
 
 </html>

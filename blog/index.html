@@ -7,45 +7,60 @@
   <meta name="description" content="Personal Website for Steven Broderick">
   <meta name="author" content="Steven Broderick">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 </head>
 
 <body>
-  <div id="name">Steven J. Broderick</div>
-  <nav>
-    <a href="">About</a>
-    <a href="">Projects</a>
-    <a href="">Resume</a>
-    <a href="">Blog</a>
-    <a href="">Contact</a>
-  </nav>
+  <div class="wrapper">
+    <header>
+      <!-- replace with image later -->
+      <h1>Steven J. Broderick</h1>
+      <nav>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section id="posts">
-    <h1>Most recent blog posts by Steven:</h1>
-    <article>
-      <a href="t1-git-blog.html">
-        <h2>Gitting the Hang of It</h2>
-        <p class="dates">Published: 10 September, 2015</p>
-      </a>
-    </article>
-  </section>
+    <main>
+      <section id="posts">
+        <h1>Most recent blog posts by Steven:</h1>
+        <article>
+          <a href="t1-git-blog.html">
+            <h2>Gitting the Hang of It</h2>
+            <p class="dates">Published: 10 September, 2015</p>
+            <p class="blurb">Preview text. Preview text. Dolor sit amet.</p>
+          </a>
+        </article>
+      </section>
 
-  <aside id="sidebar">
-    <img src="../imgs/portrait.png" alt="avatar">
-    <section id="menu">
-      <ul id="months">
-        <li><a href="">September</a></li>
-      </ul>
-    </section>
-  </aside>
+      <aside>
+        <div id="portrait">
+          <img src="../imgs/portrait.png" alt="avatar">
+        </div>
+        <p id="summary">Pointless ruminations</p>
+        <section id="menu">
+          <ul id="months">
+            <li><a href="">September (1)</a></li>
+          </ul>
+        </section>
+      </aside>
+    </main>
 
-  <footer>
-    <div id="social-media">
-      <a href="">GitHub</a>
-      <a href="">Twitter</a>
-      <a href="">LinkedIn</a>
-    </div>
-    <p id="legal">Copyright &copy; 2015 Steven Broderick</p>
-  </footer>
+    <footer>
+      <div id="social-media">
+        <!-- add social media icons later, possibly with bootstrap -->
+        <a href=""><img src="../imgs/gmail.png" alt="Gmail"></a>
+        <a href=""><img src="../imgs/github.png" alt="GitHub"></a>
+        <a href=""><img src="../imgs/twitter.png" alt="Twitter"></a>
+        <a href=""><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+      </div>
+      <p>Copyright &copy; 2015 Steven Broderick</p>
+    </footer>
+  </div>
 
 </body>
 </html>

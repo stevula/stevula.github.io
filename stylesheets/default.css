@@ -8,11 +8,30 @@ Code is broken up into sections based on order of appearance in the DOM:
 Subclass selectors are nested under parent. */
 
 /* General */
+ul {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
 
+html, body {
+  height: 100%;
+}
 
 /* Body */
 body {
   font-family: "Lucida Sans";
+  background-color: #f5f8fa;
+  min-height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
 }
 
 /* Header */
@@ -33,7 +52,7 @@ nav {
     padding: 0;
     display: inline-block;
   }
-  nav li {
+  li {
     display: inline-block;
     margin-left: 5%;
     margin-right: 5%;
@@ -50,8 +69,7 @@ nav {
 
 /* Main */
 main {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 10%;
   height: 80%;
 }
 
@@ -63,9 +81,10 @@ main {
   #portrait img {
     width: 233px;
     height: 216px;
-    border: 0;
     display: block;
     margin: auto;
+    border: 1px solid black;
+    border-radius: 50%;
   }
 
 #bio {
@@ -85,10 +104,18 @@ main {
 
 /* Footer */
 footer {
+  position: absolute;
+  bottom: 0;
+  height: 15%;
   text-align: center;
+  clear: both;
   width: 100%;
-
 }
   footer div {
     display: inline;
+  }
+  footer img {
+    width: 35px;
+    height: 35px;
+    padding: 0px 15px;
   }

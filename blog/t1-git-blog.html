@@ -1,52 +1,108 @@
 <!DOCTYPE html>
+
+<html lang="en">
+
 <head>
-  <title>Steven does DBC</title>
+  <title>Steven Broderick | Blog</title>
   <meta charset="UTF-8">
+  <meta name="author" content="Steven Broderick">
+  <meta name="description" content="Personal Website for Steven Broderick">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 </head>
 
-<main>
-  <h1>Gitting the Hang of It</h1>
-  <h2>Gitter done</h2>
-  <h4>10 September, 2015</h4>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Steven J. Broderick</h1>
+      <nav>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section>
-    <p>
-      Version control is something that's easy to take for granted when working by yourself on a project. You might accidentally delete something in your text file, but it's always just a press of the "undo" button away. Deleted an old folder, only to realize it had something you need in it? Don't worry, it's probably still in the computer's trash bin. Thanks to these types of features, we rarely screw up our work so badly that we can't get back to a functional version of it.
-    </p>
-    <p>
-      I learned about version control at this consulting firm where I used to work. We would receive heaps of operational data from clinics, mostly in the form of Excel spreadsheets. We got things like appointment times, durations, no-show status, doctor's name, etc. Our job was to comb through it and look for signs of inefficiency and ways to improve their productivity (riveting stuff!). In the beginning, it was just two of us and we could separate the work so as not to step on each other's toes.
-    </p>
-    <p>
-      Our team grew and in the end we had five people, all looking at the same dataset, all making different tables and charts. Like Gollum from The Lord of the Rings, our number one rule was this: protect the master! So, whenever we got a new dataset, the first thing we did was make our own personal copy before digging in. If anyone tampered with the master version, they were in for a good scolding.
-    </p>
-    <p>
-      Finally, we would write up a consultative report for the clinic managers, which meant we had to choose the most important findings each person had found and merge them back into one document. The bosses were kind of old-fashioned, so they usually wanted everything printed out. Because of this we had to make sure that not only file names, but also every page of every document had a version number and date on it. Sometimes one person's figures didn't match up with another person's figures, and we'd realize one of them was making calculation off the wrong version of the dataset!
-    </p>
-    <p>
-      Anyways, that model of version control wasn't quite the same as git, but it shared the same goals:
-      <ul>
-        <li>
-          Don't muck with the master version unless you're really, really sure.
-        </li>
-        <li>
-          Allow lots of people to work on the same content at the same time
-        </li>
-        <li>
-          Be able to track changes incrementally, by date and author.
-        </li>
-      </ul>
-    <p>
-      <strong>TLDR: trying to do version control manually is a pain in the ass and prone to errors.</strong>
-    </p>
-    <p>
-      git, as I'm finding, creates a much better framework for project collaboration. You can make a copy of someone else's project by forking. Then you can branch from that copy to work on separate version or component without affecting the master's functionality. git also provides really thorough functionality for documenting and syncing changes. It actually <em>won't let</em> you commit a change without a note, which is awesome.
-    </p>
-    <p>
-      GitHub is cool because it allows code to be accessed by anyone at any time. It also creates a social environment for open source development. You can even talk to it through git commands.
-    </p>
-    <p>
-      Who came up with that name, though?
-    </p>
-  </section>
-</main>
+    <main>
+
+      <header>
+        <div class="blog-post-nav">
+          <a href="index.html">Back to blog index</a>
+          <a href="#">Older post</a>
+          <a href="#">Newer post</a>
+        </div>
+      </header>
+
+      <article class="main-article">
+
+        <header>
+          <h2 class="blog-title">Gitter Done</h2>
+          <p class="date">10 September, 2015</p>
+        </header>
+
+        <p>
+          Version control is something that's easy to take for granted when working by yourself on a project. You might accidentally delete something in your text file, but it's always just a press of the "undo" button away. Deleted an old folder, only to realize it had something you need in it? Don't worry, it's probably still in the computer's trash bin. Thanks to these types of features, we rarely screw up our work so badly that we can't get back to a functional version of it.
+        </p>
+        <p>
+          I learned about version control at this consulting firm where I used to work. We would receive heaps of operational data from clinics, mostly in the form of Excel spreadsheets. We got things like appointment times, durations, no-show status, doctor's name, etc. Our job was to comb through it and look for signs of inefficiency and ways to improve their productivity (riveting stuff!). In the beginning, it was just two of us and we could separate the work so as not to step on each other's toes.
+        </p>
+        <p>
+          Our team grew and in the end we had five people, all looking at the same dataset, all making different tables and charts. Like Gollum from The Lord of the Rings, our number one rule was this: protect the master! So, whenever we got a new dataset, the first thing we did was make our own personal copy before digging in. If anyone tampered with the master version, they were in for a good scolding.
+        </p>
+        <p>
+          Finally, we would write up a consultative report for the clinic managers, which meant we had to choose the most important findings each person had found and merge them back into one document. The bosses were kind of old-fashioned, so they usually wanted everything printed out. Because of this we had to make sure that not only file names, but also every page of every document had a version number and date on it. Sometimes one person's figures didn't match up with another person's figures, and we'd realize one of them was making calculation off the wrong version of the dataset!
+        </p>
+        <p>
+          Anyways, that model of version control wasn't quite the same as git, but it shared the same goals:
+        </p>
+        <ul>
+          <li>Don't muck with the master version unless you're really, really sure.</li>
+          <li>Allow lots of people to work on the same content at the same time.</li>
+          <li>Be able to track changes incrementally, by date and author.</li>
+        </ul>
+        <p>
+          <strong>TLDR: trying to do version control manually is a pain in the ass and prone to errors.</strong>
+        </p>
+        <p>
+          git, as I'm finding, creates a much better framework for project collaboration. You can make a copy of someone else's project by forking. Then you can branch from that copy to work on separate version or component without affecting the master's functionality. git also provides really thorough functionality for documenting and syncing changes. It actually won't let you commit a change without a note, which is awesome.
+        </p>
+        <p>
+          GitHub is cool because it allows code to be accessed by anyone at any time. It also creates a social environment for open source development. You can even talk to it through git commands.
+        </p>
+        <p>
+          Who came up with that name, though?
+        </p>
+
+      </article>
+
+    </main>
+
+    <aside>
+      <div id="portrait">
+        <img src="../imgs/portrait.png" alt="avatar">
+      </div>
+      <p id="summary">Pointless ruminations</p>
+      <section id="menu">
+        <ul id="months">
+          <li><a href="">September (1)</a></li>
+        </ul>
+      </section>
+    </aside>
+
+
+    <footer>
+      <div id="social-media">
+        <!-- add social media icons later, possibly with bootstrap -->
+        <a href=""><img src="../imgs/gmail.png" alt="Gmail"></a>
+        <a href=""><img src="../imgs/github.png" alt="GitHub"></a>
+        <a href=""><img src="../imgs/twitter.png" alt="Twitter"></a>
+        <a href=""><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+      </div>
+      <p>Copyright &copy; 2015 Steven Broderick</p>
+    </footer>
+  </div>
+</body>
+
+</html>

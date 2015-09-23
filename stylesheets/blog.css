@@ -7,7 +7,21 @@ main {
 
 article {
   width: 70%;
+  border-bottom: 1px solid gray;
 }
+
+  article a {
+    text-decoration: none;
+  }
+  article p {
+    margin: 0.25em;
+  }
+
+h2 {
+  text-decoration: underline;
+  margin-bottom: 0.25em;
+}
+
 
 aside {
   width: 15%;

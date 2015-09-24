@@ -1,41 +1,68 @@
+/*
+1. General
+2. Main
+3. Sidebar
+*/
+
+/* General */
+.wrapper {
+  position: relative;
+  padding-bottom: 5%;
+}
+
+/* Main */
 main {
   padding-left: 5%;
-  height: 80%;
   margin-top: 3%;
   margin-bottom: 10%;
+  width: 70%;
+}
+
+.blog-post-nav a {
+  padding-right: 15px;
+}
+
+header p {
+  color: gray;
 }
 
 article {
-  width: 70%;
+  width: 90%;
   border-bottom: 1px solid gray;
+  padding-bottom: 2%;
 }
-
   article a {
     text-decoration: none;
   }
-  article p {
-    margin: 0.25em;
-  }
+
+.date, .blurb {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
 
 h2 {
   text-decoration: underline;
   margin-bottom: 0.25em;
 }
 
-
+/* Sidebar */
 aside {
-  width: 15%;
-  height: 40%;
+  width: 9em;
+  min-height: 20em;
   position: fixed;
   top: 20%; right: 6%;
   padding: 2%;
   border: 1px solid gray;
-  border-radius: 10%;
+  border-radius: 2%;
   text-align: center;
   background-color: #333333;
 }
   aside a, aside p {
     color: white;
+  }
+  aside ul {
+    padding-left: 0;
+    list-style-type: none;
   }
 
 #portrait {
@@ -55,10 +82,3 @@ aside {
   border-top: 1px solid white;
 }
 
-.blog-post-nav a {
-  padding-right: 15px;
-}
-
-header p {
-  color: gray;
-}

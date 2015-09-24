@@ -13,6 +13,10 @@ html, body {
   min-height: 100%;
 }
 
+p {
+  line-height: ;
+}
+
 /* Body */
 body {
   font-family: "Lucida Sans";

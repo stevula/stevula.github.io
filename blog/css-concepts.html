@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Steven Broderick | Blog</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Steven Broderick">
+  <meta name="description" content="Personal Website for Steven Broderick">
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Steven J. Broderick</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <div class="blog-post-nav">
+          <a href="index.html">Back to blog index</a>
+          <a href="#">Newer post</a>
+          <a href="t1-git-blog.html">Older post</a>
+        </div>
+      </header>
+
+      <article class="main-article">
+        <header>
+          <h2 class="blog-title">The Specificity Wars</h2>
+          <p class="date">24 September, 2015</p>
+        </header>
+
+        <p>
+          My first exposure to HTML was in a high school web design class around 2002. We didn't use any of this fancy-schmancy CSS magic! All of our styling was in the HTML and we positioned everything by putting it inside a giant table with invisible borders. And we called that giant table a webpage. You may already be acquainted with this style of web design from the Berkshire Hathaway website (glorious!).
+        </p>
+        <p>
+          I took another jab at a web design class while attending university in 2011. I'm not gonna lie to you, but CSS blew my mind a bit. Everyone was really into divs back then. Divs inside of divs, inside of other divs! It was like div-ception.
+        </p>
+        <p>
+          So here I am, four years later and once again, everything has changed! They took the role of the old divs and split it up into all these other semantic tags, like &lt;article&gt;, &lt;section&gt;, &lt;main&gt;... which I tend to think of simply as more specific kinds of divs. Naturally, being the borderline perfectionist that I am, I had to figure out the best and proper way of using each of these new tags. "What are the best practices?" I asked. Well, let me tell you, there is quite the free-for-all going on right now in the world of CSS, it seems.
+        </p>
+        <p>
+          Some people advocate doing away with id selectors (except as JS hooks). Proponents of Atomic advocate using only one declaration per CSS block - the result of which is a strange hybrid of the inline HTML styling of the past and the website-wide mutability that CSS brings. And then there's BEM, OOCSS, SMACSS... the list goes on.
+        </p>
+        <p>
+          Well, the prompt for this blog post was supposed to be: <em>What are the best practices associated with using classes vs ids?</em> Traditionally, a <strong>class</strong> is used for a bunch of things that you want to style the same and an <strong>id</strong> for something that is styled uniquely. It used to be that simple, at least.
+        </p>
+        <p>
+          But now some people say you should never use an <strong>id</strong>, because maybe you will want to style other things like it later. Why not use a <strong>class</strong> instead; even if it only applies to one thing right now, you never know if you might want to use that styling on other elements later. And let's not forget that <strong>id</strong>'s add complexity to the specificity structure of the CSS. And yet, others would argue that <strong>id</strong>'s fulfill a purpose and we should use them for that!
+        </p>
+        <p>
+          Anyways, I'm not sure that was what the writers of this prompt at had in mind, but I found the debate interesting. I think I'll refrain from picking a side for the time being. The most important thing, I think, is to do things consistently within the context of the project.
+        </p>
+      </article>
+    </main>
+
+    <aside>
+      <div id="portrait">
+        <img src="../imgs/portrait.png" alt="avatar">
+      </div>
+      <p id="summary">Pointless ruminations</p>
+      <section id="menu">
+        <ul id="months">
+          <li><a href="">September</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <footer>
+      <div id="social-media">
+        <!-- add social media icons later, possibly with bootstrap -->
+        <a href="mailto:BroderickSteven@gmail.com"><img src="../imgs/gmail.png" alt="Gmail"></a>
+        <a href="https://github.com/stevula"><img src="../imgs/github.png" alt="GitHub"></a>
+        <a href="https://twitter.com/benissimus"><img src="../imgs/twitter.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/in/brodericks"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+      </div>
+      <p>Copyright &copy; 2015 Steven Broderick</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

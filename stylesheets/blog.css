@@ -45,6 +45,10 @@ h2 {
   margin-bottom: 0.25em;
 }
 
+.blog-title {
+  text-decoration: none;
+}
+
 /* Sidebar */
 aside {
   width: 9em;

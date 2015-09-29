@@ -1,0 +1,13 @@
+- make responsive
+- make it look better on large screen
+- make placement consistent across pages
+- choose different typeset for header/main
+- change unvisited link color
+- make name link to index
+- add real photos to index and blog sidebar
+- add copy to index
+- make blog sidebar longer(?)
+- add hover effect to social media icons
+- create projects page
+- create contact page
+- change background color (too subtle?)

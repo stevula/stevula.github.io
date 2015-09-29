@@ -31,13 +31,14 @@ article {
   border-bottom: 1px solid gray;
   padding-bottom: 2%;
 }
-  article a {
-    text-decoration: none;
-  }
 
 .date, .blurb {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
+}
+
+#posts a {
+  text-decoration: none;
 }
 
 h2 {

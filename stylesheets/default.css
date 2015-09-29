@@ -13,13 +13,13 @@ html, body {
   min-height: 100%;
 }
 
-p {
-  line-height: ;
+.code {
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* Body */
 body {
-  font-family: "Lucida Sans";
+  font-family: "Lato", sans-serif;
   background-color: #f5f8fa;
   min-height: 100%;
 }
@@ -102,6 +102,6 @@ footer {
   footer img {
     max-width: 35px;
     max-height: 35px;
-    padding: 0px 15px;
+    padding: 0 15px;
   }
 

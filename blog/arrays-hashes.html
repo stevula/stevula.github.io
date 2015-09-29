@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Steven Broderick | Blog</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Steven Broderick">
+  <meta name="description" content="Personal Website for Steven Broderick">
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Steven J. Broderick</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <div class="blog-post-nav">
+          <a href="index.html">Back to blog index</a>
+          <a href="#">Newer post</a>
+          <a href="css-concepts.html">Older post</a>
+        </div>
+      </header>
+
+      <article class="main-article">
+        <header>
+          <h2 class="blog-title">Arrays and Hashes</h2>
+          <p class="date">29 September, 2015</p>
+        </header>
+
+        <p>
+          Two data structures, both alike in dignity... but not without their individual merits.
+       </p>
+       <p>
+          An <span class="code">Array</span> is basically a list of items, referred to individually as "elements", which (in Ruby) are separated by commas and enclosed in square-brackets:
+        </p>
+        <p>
+          <blockquote class="code">[element1, element2, element3]</blockquote>
+        </p>
+        <p>
+          The <a href="http://ruby-doc.org/core-2.2.0/Array.html">Ruby documentation</a> says that an <span class="code">Array</span> can contain a collection of <em>any</em> object, which means the elements can be strings, numerics, Booleans, other arrays... almost anything. That might not hold true on things that are <em>sort of</em> object-y, like <span class="code">Method</span>s and <span class="code">Proc</span>s, but it would be interesting to test that out. An <span class="code">Array</span> can also be empty:
+        </p>
+        <p>
+          <blockquote class="code">[]</blockquote>
+        </p>
+        <p>
+          Each element in the <span class="code">Array</span> is automatically assigned an "index", based on its position in the <span class="code">Array</span>. The first element has an index of 0, the second has an index of 1, and so on. You can retrieve the stored value by referencing the corresponding index of the <span class="code">Array</span>. <span class="code">my_array[1]</span> would retrieve the second element of <span class="code">my_array[1]</span>
+        </p>
+        <p>
+          I should add that you can also index from the back on the <span class="code">Array</span> by using negative numbers: -1 is the last element, -2 is the second to last, etc.
+        </p>
+        <p>
+          So, there you have it, <span class="code">Array</span>s are useful for storing pieces of information and a numeric-indexing system suits your purposes. Because of that, they're pretty useful when you don't know and/or care where each element is going to be in the list, like when you just want to iterate over every element in the list. Now, on to <span class="code">Hash</span>es!
+        </p>
+        <hr>
+        <p>
+          <span class="code">Hash</span>es are similar to Arrays, in that they store listed of data. The main difference is that <span class="code">Hash</span>es store information as a "key-value pair", meaning that instead of each value having a numeric index, it has a unique key. The key can be a string, number, or (most often) a Symbol.
+        </p>
+        <p>
+          What we call a <span class="code">Hash</span> in Ruby is named differently in some languages. It's called an <span class="code">Object</span> (that's not confusing at all!) and a <span class="code">Dictionary</span> in Python.  In Ruby, a <span class="code">Hash</span> is composed of a list of key-value pairs enclosed in angle-brackets, with keys and pairs separated by <span class="code">=></span> or <span class="code">:</span>, depending on the notation; each pair is separated from the next pair by a comma:
+        </p>
+        <p>
+          <blockquote class="code">{ key1 => value1, key2 => value2 }</blockquote>
+        </p>
+        <p>
+          The advantage of <span class="code">Hash</span>es is that you can retrieve a value just by referencing the key, without knowing where it is stored in the <span class="code">Hash</span>. That is ideal for when you have linked data, for example:
+        </p>
+        <p>
+          <ul class="code">
+            <li>hamburger => 6.00</li>
+            <li>Dev_Bootcamp => "633 Folsom, San Francisco, CA 94107"</li>
+            <li>favorite_color => "puce"</li>
+            <li>alive => true</li>
+          </ul>
+        </p>
+        <p>
+          You could create a <span class="code">Hash c</span>alled "Steven" (that's me) and use it to store various tawdry details about me: <span class="code">{ hair_color => brown, felony_convictions => unknown, blogging_level => novice }</span>). You could use one to store account details on a customer, menu items with costs, or a list of all your old high school rivals and their current happiness ratings. The possibilities are endless!
+        </p>
+        <p>
+          If it's not clear why a key is better than a numeric index in some situations, imagine trying to look up the definition of "mercurial" in the dictionary if all the headwords were replaced with numbers. That's what an <span class="code">Array</span>-based dictionary would be. I would imagine <span class="code">Array</span>s are tend be to a poor choice for large datasets, if you need to reference specific indices regularly.
+        </p>
+        <hr>
+        <p>
+          To wrap things up, <span class="code">Array</span>s excel at storing information when you have unlinked data or if the indexing scheme is irrelevant to your current purpose. <span class="code">Hash</span>es are good for storing linked data and provide a human-friendly way to access values.
+        </p>
+
+      </article>
+    </main>
+
+    <aside>
+      <div id="portrait">
+        <img src="../imgs/portrait.png" alt="avatar">
+      </div>
+      <p id="summary">Pointless ruminations</p>
+      <section id="menu">
+        <ul id="months">
+          <li><a href="">September</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <footer>
+      <div id="social-media">
+        <!-- add social media icons later, possibly with bootstrap -->
+        <a href="mailto:BroderickSteven@gmail.com"><img src="../imgs/gmail.png" alt="Gmail"></a>
+        <a href="https://github.com/stevula"><img src="../imgs/github.png" alt="GitHub"></a>
+        <a href="https://twitter.com/benissimus"><img src="../imgs/twitter.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/in/brodericks"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+      </div>
+      <p>Copyright &copy; 2015 Steven Broderick</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

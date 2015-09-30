@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Steven Broderick | Blog</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Steven Broderick">
+  <meta name="description" content="Personal Website for Steven Broderick">
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Steven J. Broderick</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <div class="blog-post-nav">
+          <a href="index.html">Back to blog index</a>
+          <a href="#">Newer post</a>
+          <a href="arrays-hashes.html">Older post</a>
+        </div>
+      </header>
+
+      <article class="main-article">
+        <header>
+          <h2 class="blog-title">Designing for Accessibility</h2>
+          <p class="date">30 September, 2015</p>
+        </header>
+
+        <p>
+          There is a lot of talk about screen readers and designing for accessibility in the web design community these days, but I get the impression that it's a pretty low priority in many new designers' minds. Why spend all that extra time adding code that will only benefit some insignificant percentage of your visitors? Therein lie three misconceptions that I would like to address:
+        </p>
+
+        <ol>
+          <li>
+            Visitors with screen readers are too uncommon to worry about.
+          </li>
+          <li>
+            Accessible design only benefits people with screen readers.
+          </li>
+          <li>
+            Designing for accessibility takes a lot of extra work.
+          </li>
+        </ol>
+
+        <h3>Misconception 1: Visitors with Screen Readers are Rare</h3>
+        <p>
+          (Ok, maybe this one is more a concession than a misconception.)
+        </p>
+        <p>
+          Unfortunately, we just have no idea how many screen reader users are out there, but the US Census Bureau states that approximately 2.3% of Americans reported a visual disability in 2013 (<a href="http://www.disabilitystatistics.org/reports/acs.cfm?statistic=1">in easy-to-read format</a>). In other words, about 7.3 million Americans. A lot of them are students and office workers, to whom internet access is not optional.
+        </p>
+        <p>
+          In addition to that number, a 2015 survey conducted by the organization <a href="http://webaim.org/projects/screenreadersurvey6/">WebAIM</a> indicates that a smaller, but significant percentage (6.9%) of screen reader users, who are not technically disabled, choose to use a screen reader anyways.
+        </p>
+        <p>
+          And besides, if you're building a site for a client, they probably don't want to lose the business of the blind just because their site was hard to navigate. If your site is still catering to the tiny percentage of people still using a 10-year old version of Internet Explorer (ugh!), you shouldn't ignore other minorities.
+        </p>
+
+      <h3>
+        Misconception 2: Accessibility Only Benefits Screen Readers
+      </h3>
+      <p>
+        First off, what is accessible design?
+      </p>
+      <p>
+        Essentially, it comes down to organizing your code in a logical fashion, with semantic tags (HTML) separated from the styling (CSS). For example, don't use a <span class="code">&lt;h3&gt;</span> tag just because you think it makes the text look pretty. <span class="code">&lt;h3&gt;</span> has a specific semantic purpose, which is to head a section nested within a <span class="code">&lt;h2&gt;</span> section. Following this creates a clear document outline that the screen reader's algorithm can construct to present your page to the user in a logical order.
+      </p>
+      <p>
+        Hmm... what else uses algorithms to read pages? <strong>Search engines!</strong> If you want Google to parse your site correctly and regard it as "modern", it's likely going to become increasingly important to make it readable not just to humans, but also to machines.
+      </p>
+      <p>
+        Besides that, there are lots of little things you can do for accessibility that make the site a better experience for everyone, not just the disabled (many of these courtesy of <a href="http://webaccess.berkeley.edu/resources/tips/web-accessibility">UC Berkeley</a>):
+      </p>
+      <ul>
+        <li>
+          Provide descriptive alt-text, in case your images don't load.
+        </li>
+        <li>
+          Make links descriptive, instead of just saying "Click Here". Besides giving better information, it's often less verbose (think "Click here to learn about us" versus simple "About Us").
+        </li>
+        <li>
+          Be careful using color or images by themselves to convey vital information. A <em>lot</em> of people are color blind or just find such techniques gimmicky. Some color combinations will also not have enough contrast for color-blind people to distinguish.
+        </li>
+        <li>
+          Label forms and fields descriptively and make them tab-friendly.
+        </li>
+        <li>
+          Give users an alternative to CAPTCHA images.
+        </li>
+        <li>
+          Use tables for displaying tabular information, not for positioning elements on your page.
+        </li>
+        <li>
+          Make sure your site can be navigated with keyboard alone (via the tab/arrow/enter keys). Not everyone has the mobility or dexterity to use a mouse. I've had to do this myself a number of times when my mouse was acting funky!
+        </li>
+        <li>
+          As someone else in phase-0 noted in a recent discussion, code with semantic tags is just easier to read than tons and tons of <span class="code">&lt;div&gt;</span>'s.
+        </li>
+      </ul>
+
+      <h3>
+        Misconception 3: Accessibility Takes Too Much Work
+      </h3>
+      <p>
+        You might say that's a lot of extra work just to accommodate less than 2% of the population. And what are the odds that a blind person will want to visit your phase-0 website, anyways?
+      </p>
+      <p>
+        My answer to you, dear sir or madame (or other gender-probability), is that it requires no extra work at all! A properly built website that follows modern best practices is, by default, screen reader-friendly. Your HTML should be chock-full of meaning, organized, and no major information should be lost if styling and graphics fail to load. If a website is not accessible, that's because its designers didn't follow modern standards.
+      </p>
+
+      </article>
+    </main>
+
+    <aside>
+      <div id="portrait">
+        <img src="../imgs/portrait.png" alt="avatar">
+      </div>
+      <p id="summary">Pointless ruminations</p>
+      <section id="menu">
+        <ul id="months">
+          <li><a href="">September</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <footer>
+      <div id="social-media">
+        <!-- add social media icons later, possibly with bootstrap -->
+        <a href="mailto:BroderickSteven@gmail.com"><img src="../imgs/gmail.png" alt="Gmail"></a>
+        <a href="https://github.com/stevula"><img src="../imgs/github.png" alt="GitHub"></a>
+        <a href="https://twitter.com/benissimus"><img src="../imgs/twitter.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/in/brodericks"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+      </div>
+      <p>Copyright &copy; 2015 Steven Broderick</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

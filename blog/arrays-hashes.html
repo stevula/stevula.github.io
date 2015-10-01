@@ -71,7 +71,7 @@
           <span class="code">Hash</span>es are similar to <span class="code">Array</span>s, in that they store lists of data. The main difference is that <span class="code">Hash</span>es store information as a "key-value pair", meaning that instead of each value having a numeric index, it has a unique key. The key can be a string, number, or (most often) a <span class="code">Symbol</span>.
         </p>
         <p>
-          What we call a <span class="code">Hash</span> in Ruby is named differently in some languages. It's called an <span class="code">Object</span> in JavaScript (that's not confusing at all!) and a <span class="code">Dictionary</span> in Python.  In Ruby, a <span class="code">Hash</span> is composed of a list of key-value pairs enclosed in angle-brackets, with keys and pairs separated by "<span class="code">=></span>" or "<span class="code">:</span>", depending on the notation; each pair is separated from the next pair by a comma:
+          What we call a <span class="code">Hash</span> in Ruby is named differently in some languages. It's called an <span class="code">Object</span> in JavaScript (that's not confusing at all!) and a <span class="code">Dictionary</span> in Python.  In Ruby, a <span class="code">Hash</span> is composed of a list of key-value pairs enclosed in angle-brackets, with keys and pairs separated by "<span class="code">=></span>" or "<span class="code">:</span>", depending on the notation. Each key-value pair is separated from the next pair by a comma:
         </p>
         <p>
           <blockquote class="code">{ key1 => value1, key2 => value2 }</blockquote>
@@ -88,7 +88,7 @@
           </ul>
         </p>
         <p>
-          You could create a <span class="code">Hash c</span>alled "Steven" (that's me) and use it to store various tawdry details about me: <span class="code">{ hair_color => "brown", felony_convictions => "unknown", blogging_level => "novice" }</span>. You could use one to store account details on a customer, menu items with costs, or a list of all your old high school rivals and their current happiness ratings. The possibilities are endless!
+          You could create a <span class="code">Hash</span> called "Steven" (that's me) and use it to store various tawdry details about me: <span class="code">{ hair_color => "brown", felony_convictions => "unknown", blogging_level => "novice" }</span>. You could use one to store account details on a customer, menu items with costs, or a list of all your old high school rivals and their current happiness ratings. The possibilities are endless!
         </p>
         <p>
           If it's not clear why a key is better than a numeric index in some situations, imagine trying to look up the definition of "mercurial" in the dictionary if all the headwords were replaced with numbers. That's what an <span class="code">Array</span>-based dictionary would be. I would imagine <span class="code">Array</span>s tend be to be a poor choice for large datasets, if you plan to reference specific indices regularly.

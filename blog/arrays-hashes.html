@@ -46,56 +46,56 @@
           Two data structures, both alike in dignity... but not without their individual merits.
        </p>
        <p>
-          An <span class="code">Array</span> is basically a list of items, referred to individually as "elements", which (in Ruby) are separated by commas and enclosed in square-brackets:
+          An <code>Array</code> is basically a list of items, referred to individually as "elements", which (in Ruby) are separated by commas and enclosed in square-brackets:
         </p>
         <p>
-          <blockquote class="code">[element1, element2, element3]</blockquote>
+          <code>[element1, element2, element3]</code>
         </p>
         <p>
-          The <a href="http://ruby-doc.org/core-2.2.0/Array.html">Ruby documentation</a> says that an <span class="code">Array</span> can contain a collection of <em>any</em> object, which means the elements can be strings, numerics, Booleans, other arrays... almost anything. That might not hold true on things that are <em>sort of</em> object-y, like <span class="code">Method</span>s and <span class="code">Proc</span>s, but it would be interesting to test that out. An <span class="code">Array</span> can also be empty:
+          The <a href="http://ruby-doc.org/core-2.2.0/Array.html">Ruby documentation</a> says that an <code>Array</code> can contain a collection of <em>any</em> object, which means the elements can be strings, numerics, Booleans, other arrays... almost anything. That might not hold true on things that are <em>sort of</em> object-y, like <code>Method</code>s and <code>Proc</code>s, but it would be interesting to test that out. An <code>Array</code> can also be empty:
         </p>
         <p>
-          <blockquote class="code">[]</blockquote>
+          <code>[]</code>
         </p>
         <p>
-          Each element in the <span class="code">Array</span> is automatically assigned an "index", based on its position in the <span class="code">Array</span>. The first element has an index of 0, the second has an index of 1, and so on. You can retrieve the stored value by referencing the corresponding index of the <span class="code">Array</span>. For example,<span class="code"> my_array[1]</span> would retrieve the second element of <span class="code">my_array</span>.
+          Each element in the <code>Array</code> is automatically assigned an "index", based on its position in the <code>Array</code>. The first element has an index of 0, the second has an index of 1, and so on. You can retrieve the stored value by referencing the corresponding index of the <code>Array</code>. For example,<code> my_array[1]</code> would retrieve the second element of <code>my_array</code>.
         </p>
         <p>
-          I should add that you can also index from the back of the <span class="code">Array</span> by using negative numbers: -1 is the last element, -2 is the second to last, etc.
+          I should add that you can also index from the back of the <code>Array</code> by using negative numbers: -1 is the last element, -2 is the second to last, etc.
         </p>
         <p>
-          So, there you have it, <span class="code">Array</span>s are useful for storing pieces of information when a numeric-indexing system suits your purposes. Because of that, they're very useful when you don't know and/or care where each element is going to be in the list, like when you just want to iterate over all of the items. Now, on to <span class="code">Hash</span>es!
+          So, there you have it, <code>Array</code>s are useful for storing pieces of information when a numeric-indexing system suits your purposes. Because of that, they're very useful when you don't know and/or care where each element is going to be in the list, like when you just want to iterate over all of the items. Now, on to <code>Hash</code>es!
         </p>
         <hr>
         <p>
-          <span class="code">Hash</span>es are similar to <span class="code">Array</span>s, in that they store lists of data. The main difference is that <span class="code">Hash</span>es store information as a "key-value pair", meaning that instead of each value having a numeric index, it has a unique key. The key can be a string, number, or (most often) a <span class="code">Symbol</span>.
+          <code>Hash</code>es are similar to <code>Array</code>s, in that they store lists of data. The main difference is that <code>Hash</code>es store information as a "key-value pair", meaning that instead of each value having a numeric index, it has a unique key. The key can be a string, number, or (most often) a <code>Symbol</code>.
         </p>
         <p>
-          What we call a <span class="code">Hash</span> in Ruby is named differently in some languages. It's called an <span class="code">Object</span> in JavaScript (that's not confusing at all!) and a <span class="code">Dictionary</span> in Python.  In Ruby, a <span class="code">Hash</span> is composed of a list of key-value pairs enclosed in angle-brackets, with keys and pairs separated by "<span class="code">=></span>" or "<span class="code">:</span>", depending on the notation. Each key-value pair is separated from the next pair by a comma:
+          What we call a <code>Hash</code> in Ruby is named differently in some languages. It's called an <code>Object</code> in JavaScript (that's not confusing at all!) and a <code>Dictionary</code> in Python.  In Ruby, a <code>Hash</code> is composed of a list of key-value pairs enclosed in angle-brackets, with keys and pairs separated by "<code>=></code>" or "<code>:</code>", depending on the notation. Each key-value pair is separated from the next pair by a comma:
         </p>
         <p>
-          <blockquote class="code">{ key1 => value1, key2 => value2 }</blockquote>
+          <code class="code-block">{ key1 => value1, key2 => value2 }</code>
         </p>
         <p>
-          The advantage of <span class="code">Hash</span>es is that you can retrieve a value just by referencing the key, without knowing where it is stored in the <span class="code">Hash</span>. That is ideal for when you have linked data, like item/price, business/address, or questions/answers, conditions/truthiness:
+          The advantage of <code>Hash</code>es is that you can retrieve a value just by referencing the key, without knowing where it is stored in the <code>Hash</code>. That is ideal for when you have linked data, like item/price, business/address, or questions/answers, conditions/truthiness:
         </p>
-        <p>
-          <ul class="code">
+        <ul>
+          <code>
             <li>hamburger => 6.00</li>
             <li>Dev_Bootcamp => "633 Folsom, San Francisco, CA 94107"</li>
             <li>favorite_color => "puce"</li>
             <li>alive => true</li>
-          </ul>
+          </code>
+        </ul>
+        <p>
+          You could create a <code>Hash</code> called "Steven" (that's me) and use it to store various tawdry details about me: <code>{ hair_color => "brown", felony_convictions => "unknown", blogging_level => "novice" }</code>. You could use one to store account details on a customer, menu items with costs, or a list of all your old high school rivals and their current happiness ratings. The possibilities are endless!
         </p>
         <p>
-          You could create a <span class="code">Hash</span> called "Steven" (that's me) and use it to store various tawdry details about me: <span class="code">{ hair_color => "brown", felony_convictions => "unknown", blogging_level => "novice" }</span>. You could use one to store account details on a customer, menu items with costs, or a list of all your old high school rivals and their current happiness ratings. The possibilities are endless!
-        </p>
-        <p>
-          If it's not clear why a key is better than a numeric index in some situations, imagine trying to look up the definition of "mercurial" in the dictionary if all the headwords were replaced with numbers. That's what an <span class="code">Array</span>-based dictionary would be. I would imagine <span class="code">Array</span>s tend be to be a poor choice for large datasets, if you plan to reference specific indices regularly.
+          If it's not clear why a key is better than a numeric index in some situations, imagine trying to look up the definition of "mercurial" in the dictionary if all the headwords were replaced with numbers. That's what an <code>Array</code>-based dictionary would be. I would imagine <code>Array</code>s tend be to be a poor choice for large datasets, if you plan to reference specific indices regularly.
         </p>
         <hr>
         <p>
-          To wrap things up, <span class="code">Array</span>s excel at storing information when you have single pieces of data or if the indexing scheme is irrelevant to your current purpose. <span class="code">Hash</span>es are good for storing linked data and provide a human-friendly way to access values, which is agnostic as to sequential position in the list.
+          To wrap things up, <code>Array</code>s excel at storing information when you have single pieces of data or if the indexing scheme is irrelevant to your current purpose. <code>Hash</code>es are good for storing linked data and provide a human-friendly way to access values, which is agnostic as to sequential position in the list.
         </p>
 
       </article>

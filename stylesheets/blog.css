@@ -10,6 +10,10 @@
   padding-bottom: 5%;
 }
 
+.code-block {
+  padding-left: 3em;
+}
+
 /* Main */
 main {
   padding-left: 5%;

@@ -14,3 +14,6 @@
 - fix the footer on blog index
 - add October to sidebar
 - do something with sidebar links?
+- reassign any <h1> tags that aren't in main header
+- work on typography
+- add some ruby code formatting

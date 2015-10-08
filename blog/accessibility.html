@@ -58,9 +58,9 @@
           </li>
         </ol>
 
-        <h3>Misconception 1: Visitors with Screen Readers are Rare</h3>
+        <h3>Misconception 1: Visitors with Screen Readers are too Rare to Worry About</h3>
         <p>
-          (Ok, maybe this one is more a concession than a misconception.)
+          All right, I'll concede that these users are rare, but maybe not as rare as you'd think.
         </p>
         <p>
           Unfortunately, we just have no idea how many screen reader users are out there, but the US Census Bureau states that approximately 2.3% of Americans reported a visual disability in 2013 (<a href="http://www.disabilitystatistics.org/reports/acs.cfm?statistic=1">in easy-to-read format</a>). In other words, about 7.3 million Americans. A lot of them are students and office workers, to whom internet access is not optional.
@@ -69,7 +69,7 @@
           In addition to that number, a 2015 survey conducted by the organization <a href="http://webaim.org/projects/screenreadersurvey6/">WebAIM</a> indicates that a smaller, but significant percentage (6.9%) of screen reader users, who are not technically disabled, choose to use a screen reader anyways.
         </p>
         <p>
-          And besides, if you're building a site for a client, they probably don't want to lose the business of the blind just because their site was hard to navigate. If your site is still catering to the tiny percentage of people still using a 10-year old version of Internet Explorer (ugh!), you shouldn't ignore other minorities.
+          Even if screen readers are rare, if you're building a site for a client, they probably don't want to lose the business of the blind just because their site was hard to navigate. If your site is still catering to the tiny percentage of people still using a 10-year old version of Internet Explorer (ugh!), you shouldn't ignore other minorities.
         </p>
 
       <h3>
@@ -79,7 +79,7 @@
         First off, what is accessible design?
       </p>
       <p>
-        Essentially, it comes down to organizing your code in a logical fashion, with semantic tags (HTML) separated from the styling (CSS). For example, don't use a <span class="code">&lt;h3&gt;</span> tag just because you think it makes the text look pretty. <span class="code">&lt;h3&gt;</span> has a specific semantic purpose, which is to head a section nested within a <span class="code">&lt;h2&gt;</span> section. Following this creates a clear document outline that the screen reader's algorithm can construct to present your page to the user in a logical order.
+        Essentially, it comes down to organizing your code in a logical fashion, with semantic tags (HTML) separated from the styling (CSS). For example, don't use a <code>&lt;h3&gt;</code> tag just because you think it makes the text look pretty. <code>&lt;h3&gt;</code> has a specific semantic purpose, which is to head a section nested within a <code>&lt;h2&gt;</code> section. Following this creates a clear document outline that the screen reader's algorithm can construct to present your page to the user in a logical order.
       </p>
       <p>
         Hmm... what else uses algorithms to read pages? <strong>Search engines!</strong> If you want Google to parse your site correctly and regard it as "modern", it's likely going to become increasingly important to make it readable not just to humans, but also to machines.
@@ -110,7 +110,7 @@
           Make sure your site can be navigated with keyboard alone (via the tab/arrow/enter keys). Not everyone has the mobility or dexterity to use a mouse. I've had to do this myself a number of times when my mouse was acting funky!
         </li>
         <li>
-          As someone else in phase-0 noted in a recent discussion, code with semantic tags is just easier to read than tons and tons of <span class="code">&lt;div&gt;</span>'s.
+          As someone else in phase-0 noted in a recent discussion, code with semantic tags is just easier to read than tons and tons of <code>&lt;div&gt;</code>'s.
         </li>
       </ul>
 

@@ -11,3 +11,6 @@
 - create projects page
 - create contact page
 - change background color (too subtle?)
+- fix the footer on blog index
+- add October to sidebar
+- do something with sidebar links?

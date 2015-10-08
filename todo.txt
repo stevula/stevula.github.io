@@ -12,3 +12,5 @@
 - create contact page
 - change background color (too subtle?)
 - reassign any <h1> tags that aren't in main header
+- work on text layout
+- add some ruby code formatting

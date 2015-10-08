@@ -11,6 +11,9 @@
 - create projects page
 - create contact page
 - change background color (too subtle?)
+- fix the footer on blog index
+- add October to sidebar
+- do something with sidebar links?
 - reassign any <h1> tags that aren't in main header
-- work on text layout
+- work on typography
 - add some ruby code formatting

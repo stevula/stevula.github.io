@@ -10,28 +10,28 @@ Code is broken up into sections based on order of appearance in the DOM:
 */
 
 /* General */
-html, body {
-  min-height: 100%;
-}
+
 
 /* Body */
 body {
   font-family: "Lato", sans-serif;
   background-color: #e4ecf2;
   min-height: 100%;
+  margin: 5%;
 }
 
 /* Header */
 .main-title {
   text-align: center;
-  width: 41%;
-  display: inline-block;
+  font-size: 8em;
   font-family: "Courier New";
+  margin: 2% 0;
 }
 
 nav {
-  text-align: left;
-  width: 55%;
+  text-align: center;
+  width: 100%;
+  font-size: 2.5em;
   display: inline-block;
   text-transform: uppercase;
   font-family: "Courier New"
@@ -43,8 +43,8 @@ nav {
   }
   nav li {
     display: inline-block;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
   nav a {
     color: gray;
@@ -59,6 +59,7 @@ nav {
 /* Main */
 main {
   margin-top: 5%;
+  text-align: center;
 }
 
 a {
@@ -74,54 +75,47 @@ a {
 
 .portrait {
     display: inline-block;
-    height: 216px;
-    width: 41%;
+    margin: 2.5% auto 5% auto;
 }
   .portrait img {
-    width: 349px;
-    height: 324px;
+    height: 500px;
+    width: 500px;
     display: block;
-    margin: auto;
     border: 1px solid black;
     border-radius: 50%;
   }
 
 .bio {
-  vertical-align: middle;
-  height: 324px;
-  display: inline-block;
-  width: 55%;
-  position: relative;
+  top: 0;
+  display: block;
 }
-  .bio div {
-    width: 95%;
-    position: absolute;
-  }
 
 /* Footer */
 footer {
-  position: absolute;
-  bottom: 0;
-  height: 5em;
   text-align: center;
-  width: 100%;
 }
-  footer img {
-    max-width: 35px;
-    max-height: 35px;
-    padding: 0 15px;
-  }
 
+.social-media {
+  padding: 0;
+  margin: 10% 0;
+}
 .social-media li {
   display: inline;
+  word-spacing: 2.5em;
+}
+
+.social-media img {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.legal {
+  font-size: 0.5em;
 }
 
 /* Contact Form */
-.contact {
-  width: 80%;
-  margin: 0 auto;
-}
-
 label, input {
   display: block;
   top: 0;

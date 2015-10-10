@@ -27,34 +27,34 @@
 
   <main>
 
-      <div>
+      <section id="contact">
         <h1>
           Contact:
         </h1>
 
         <p>
-          Social media and email are currently listed along the bottom of each page. I will put a contact form here eventually. Maybe.
+          Social media and email are currently listed along the bottom of each page. This form won't work until I add some scripting.
         </p>
 
         <form>
           <fieldset>
-            <legend>Your info</legend>
-              <div>
-                <label>First name: </label><input type="text" name ="firstname" autofocus="autofocus">
-              </div>
-              <div>
-                <label>Last name: </label><input type="text" name ="lastname">
-              </div>
-              <div>
-                <label>Email: </label><input type="email" name="email">
-              </div>
-               <label>Message: </label><textarea class="message-field" rows="10" cols="50"></textarea>
-
-            <input type="submit" value="Submit">
+            <div class="form-left">
+              <label for="firstname">First name:</label>
+              <label for="lastname">Last name:</label>
+              <label for="email">Email:</label>
+              <label for="message">Message: </label>
+            </div>
+            <div class="form-right">
+              <input type="text" name ="firstname" autofocus="autofocus">
+              <input type="text" name ="lastname">
+              <input type="email" name="email">
+              <textarea class="message-field" name="message" rows="10" cols="50"></textarea>
+              <input class="submit" type="submit" value="Submit">
+            </div>
           </fieldset>
         </form>
 
-      </div>
+      </section>
   </main>
 
   <footer>

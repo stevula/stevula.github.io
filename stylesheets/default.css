@@ -6,6 +6,7 @@ Code is broken up into sections based on order of appearance in the DOM:
 3. Header
 4. Main
 5. Footer
+6. Contact Form
 */
 
 /* General */
@@ -57,7 +58,7 @@ nav {
 
 /* Main */
 main {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 a {
@@ -77,8 +78,8 @@ a {
     width: 41%;
 }
   #portrait img {
-    width: 233px;
-    height: 216px;
+    width: 349px;
+    height: 324px;
     display: block;
     margin: auto;
     border: 1px solid black;
@@ -86,18 +87,15 @@ a {
   }
 
 #bio {
-  vertical-align: top;
-  height: 216px;
+  vertical-align: middle;
+  height: 324px;
   display: inline-block;
   width: 55%;
   position: relative;
 }
   #bio div {
     width: 95%;
-    height: 95%;
     position: absolute;
-    margin: 0 auto;
-    top: 0; bottom: 0; left: 5%;
   }
 
 /* Footer */
@@ -118,3 +116,34 @@ footer {
   display: inline;
 }
 
+/* Contact Form */
+#contact {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label, input {
+  display: block;
+  top: 0;
+  margin: 0.5em 0;
+}
+
+.form-left, .form-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.form-left {
+  text-align: right;
+  margin-right: 1%;
+  line-height: 1.5em;
+  width: 30%;
+}
+
+.form-right {
+  margin-left: 1%;
+}
+
+.submit {
+  margin-left: 85%;
+}

@@ -72,12 +72,12 @@ a {
     text-decoration: underline;
   }
 
-#portrait {
+.portrait {
     display: inline-block;
     height: 216px;
     width: 41%;
 }
-  #portrait img {
+  .portrait img {
     width: 349px;
     height: 324px;
     display: block;
@@ -86,14 +86,14 @@ a {
     border-radius: 50%;
   }
 
-#bio {
+.bio {
   vertical-align: middle;
   height: 324px;
   display: inline-block;
   width: 55%;
   position: relative;
 }
-  #bio div {
+  .bio div {
     width: 95%;
     position: absolute;
   }
@@ -112,12 +112,12 @@ footer {
     padding: 0 15px;
   }
 
-#social-media li {
+.social-media li {
   display: inline;
 }
 
 /* Contact Form */
-#contact {
+.contact {
   width: 80%;
   margin: 0 auto;
 }

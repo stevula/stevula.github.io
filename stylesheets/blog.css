@@ -2,6 +2,7 @@
 1. General
 2. Main
 3. Sidebar
+4. Contact Form
 */
 
 /* General */
@@ -10,8 +11,16 @@
   padding-bottom: 5%;
 }
 
+code {
+  background: black;
+  color: lime;
+}
+
 .code-block {
-  padding-left: 3em;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5em;
 }
 
 /* Main */
@@ -57,21 +66,29 @@ h2 {
 /* Sidebar */
 aside {
   width: 9em;
-  min-height: 20em;
+  height: 70%;
   position: fixed;
-  top: 20%; right: 6%;
+  top: 15%; right: 6%;
   padding: 2%;
   border: 1px solid gray;
   border-radius: 2%;
   text-align: center;
+  color: white;
   background-color: #333333;
 }
-  aside a, aside p {
+  aside a {
     color: white;
+    text-decoration: none;
   }
+    aside a:visited {
+      color: white;
+    }
   aside ul {
     padding-left: 0;
-    list-style-type: none;
+  }
+  aside li {
+    margin-left: 2em;
+    text-align: left;
   }
 
 #portrait {
@@ -88,6 +105,10 @@ aside {
 
 #menu {
   padding: 10px;
-  border-top: 1px solid white;
+  border-top: 1px solid;
 }
 
+/* General */
+.message-field {
+  display: block;
+}

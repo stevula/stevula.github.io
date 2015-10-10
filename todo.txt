@@ -1,19 +1,16 @@
+MAJOR
 - make responsive
 - make it look better on large screen
-- make placement consistent across pages
-- choose different typeset for header/main
-- change unvisited link color
-- make name link to index
-- add real photos to index and blog sidebar
 - add copy to index
-- make blog sidebar longer(?)
-- add hover effect to social media icons
-- create projects page
-- create contact page
-- change background color (too subtle?)
+
+MINOR
+- make placement consistent across pages
 - fix the footer on blog index
-- add October to sidebar
+- add social media to sidebar
+
+POSTPONE
+- add real photos to index and blog sidebar
 - do something with sidebar links?
-- reassign any <h1> tags that aren't in main header
-- work on typography
-- add some ruby code formatting
+- green monospace on black?
+- make name link to index?
+- add hover effect to social media icons

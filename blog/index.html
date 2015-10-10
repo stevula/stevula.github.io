@@ -6,7 +6,7 @@
   <title>Steven Broderick - Blog</title>
   <meta name="description" content="Personal Website for Steven Broderick">
   <meta name="author" content="Steven Broderick">
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
@@ -15,13 +15,13 @@
 <body>
     <header>
       <!-- replace with image later -->
-      <h1>Steven J. Broderick</h1>
+      <h1 class="main-title">Steven J. Broderick</h1>
       <nav>
         <ul>
           <li><a href="../index.html">About</a></li>
-          <li><a href="">Projects</a></li>
+          <li><a href="../projects.html">Projects</a></li>
           <li><a href="index.html">Blog</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -32,7 +32,7 @@
 
         <article>
           <a href="enumerable-methods.html">
-            <h2>Enumerable Methods</h2>
+            <h1>Enumerable Methods</h1>
             <p class="date">Published: 7 October, 2015</p>
             <p class="blurb">It's about enumerable methods in Ruby.</p>
           </a>
@@ -40,7 +40,7 @@
 
         <article>
           <a href="accessibility.html">
-            <h2>Designing for Accessibility</h2>
+            <h1>Designing for Accessibility</h1>
             <p class="date">Published: 30 September, 2015</p>
             <p class="blurb">Why you should build with accessibility in mind.</p>
           </a>
@@ -48,7 +48,7 @@
 
         <article>
           <a href="arrays-hashes.html">
-            <h2>Arrays and Hashes</h2>
+            <h1>Arrays and Hashes</h1>
             <p class="date">Published: 29 September, 2015</p>
             <p class="blurb">It's about... arrays and hashes.</p>
           </a>
@@ -56,7 +56,7 @@
 
         <article>
           <a href="css-concepts.html">
-            <h2>The Specificity Wars</h2>
+            <h1>The Specificity Wars</h1>
             <p class="date">Published: 24 September, 2015</p>
             <p class="blurb">It's all about ids and classes.</p>
           </a>
@@ -64,7 +64,7 @@
 
         <article>
           <a href="t1-git-blog.html">
-            <h2>Gitter Done</h2>
+            <h1>Gitter Done</h1>
             <p class="date">Published: 10 September, 2015</p>
             <p class="blurb">It's about version control and git.</p>
           </a>
@@ -79,6 +79,7 @@
         <p id="summary">Pointless ruminations</p>
         <section id="menu">
           <ul id="months">
+            <li><a href="">October</a></li>
             <li><a href="">September</a></li>
           </ul>
         </section>
@@ -86,13 +87,20 @@
     </main>
 
     <footer>
-      <div id="social-media">
-        <!-- add social media icons later, possibly with bootstrap -->
-        <a href="mailto:BroderickSteven@gmail.com"><img src="../imgs/gmail.png" alt="Gmail"></a>
-        <a href="https://github.com/stevula"><img src="../imgs/github.png" alt="GitHub"></a>
-        <a href="https://twitter.com/benissimus"><img src="../imgs/twitter.png" alt="Twitter"></a>
-        <a href="https://www.linkedin.com/in/brodericks"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
-      </div>
+      <ol id="social-media">
+        <li>
+          <a href="mailto:BroderickSteven@gmail.com"><img src="../imgs/gmail.png" alt="Gmail"></a>
+        </li>
+        <li>
+          <a href="https://github.com/stevula"><img src="../imgs/github.png" alt="GitHub"></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/benissimus"><img src="../imgs/twitter.png" alt="Twitter"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/brodericks"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+        </li>
+      </ol>
       <p>Copyright &copy; 2015 Steven Broderick</p>
     </footer>
 

@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="author" content="Steven Broderick">
   <meta name="description" content="Personal Website for Steven Broderick">
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
@@ -16,13 +16,13 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1>Steven J. Broderick</h1>
+      <h1 class="main-title">Steven J. Broderick</h1>
       <nav>
         <ul>
           <li><a href="../index.html">About</a></li>
-          <li><a href="">Projects</a></li>
+          <li><a href="../projects.html">Projects</a></li>
           <li><a href="index.html">Blog</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -38,7 +38,7 @@
 
       <article class="main-article">
         <header>
-          <h2 class="blog-title">Enumerable Methods</h2>
+          <h1 class="blog-title">Enumerable Methods</h1>
           <p class="date">7 October, 2015</p>
         </header>
 
@@ -57,35 +57,28 @@
         </p>
         <p>
           <code class="code-block">numbers = [1, 2, 3, 4]</code>
-        </p>
-        <p>
           <code class="code-block">letters = ["a", "b", "c", "d"]</code>
         </p>
-        <p> 
+        <p>
           You can call <code>#zip</code> on one array and pass it another array as an argument, like so:
         </p>
         <p>
           <code class="code-block">numbers.zip(letters)</code>
         </p>
-        <p> 
+        </p>
+        <p>
           Then it "zips" the arrays together, by taking the elements at index 0 of each array, and putting them both into a new two-element array:
         </p>
         <p>
           <code class="code-block">[1, "a"]</code>
         </p>
         <p>
-          It does the same for each index, making a bunch of two-element arrays: 
+          It does the same for each index, making a bunch of two-element arrays:
         </p>
         <p>
           <code class="code-block">[1, "a"]</code>
-        </p>
-        <p>
           <code class="code-block">[2, "b"]</code>
-        </p>
-        <p>
           <code class="code-block">[3, "c"]</code>
-        </p>
-        <p>
           <code class="code-block">[4, "d"]</code>
         </p>
         <p>
@@ -94,19 +87,13 @@
         <p>
           <code class="code-block">=> [[1, "a"], [2, "b"], [3, "c"], [4, "d"]]</code>
         </p>
-        <p> 
+        <p>
           But what if the arrays aren't of equal length? <code>#zip</code> will still work, but it will zip the existent value(s) with a <code>nil</code>:
         </p>
         <p>
           <code class="code-block">language = ["English", "Piraha"]</code>
-        </p>
-        <p>
           <code class="code-block">alphabet = ["Latin"]</code>
-        </p>
-        <p>
           <code class="code-block">language.zip(alphabet)</code>
-        </p>
-        <p>
           <code class="code-block">=> [["English, "Latin"], ["Piraha", nil]]</code>
         </p>
         <p>
@@ -117,54 +104,34 @@
         </p>
         <p>
           <code class="code-block">integers = [1, 2, 3]</code>
-        </p>
-        <p>
           <code class="code-block">letters = ["a", "b", "c"]</code>
-        </p>
-        <p>
           <code class="code-block">floats = [1.3, 3.7]</code>
-        </p>
-        <p>
           <code class="code-block">integers.zip(letters, floats)</code>
-        </p>
-        <p>
           <code class="code-block">=> [[1, "a", 1.3], [2, "b", 3.7], [3, "b", nil]]</code>
         </p>
-        <p> 
+        <p>
           So, what is <code>#zip</code> useful for? It's an easy way to combine connected data that's split between multiple arrays when the same indexes are related to each other:
         </p>
         <p>
           <code class="code-block">employees = ["Alice", "Bob", "Eve"]</code>
-        </p>
-        <p>
           <code class="code-block">salaries = [50000, 48000, 80000]</code>
-        </p>
-        <p>
           <code class="code-block">locations = ["San Francisco", "Chicago", "New York"]</code>
-        </p>
-        <p>
           <code class="code-block">employees.zip(salaries, locations)</code>
-        </p>
           <code class="code-block">=> [["Alice", 50000, "San Francisco"], ["Bob", 48000, "Chicago"], ["Eve", 80000, "New York"]]</code>
-        <p>
-          It keeps those related elements nested together in the new array. The new array is kind of similar to a hash, in that the related data is grouped together (not necessarily in a pair, though), but you'll still have to reference things by a numeric index. You can change the order of the items very easily by changing the order of the arguments when you enter them. 
         </p>
-        <p> 
+        <p>
+          It keeps those related elements nested together in the new array. The new array is kind of similar to a hash, in that the related data is grouped together (not necessarily in a pair, though), but you'll still have to reference things by a numeric index. You can change the order of the items very easily by changing the order of the arguments when you enter them.
+        </p>
+        <p>
           There's one other thing you can do with <code>#zip</code>, which is pass it a block. The block will do something to the output arrays:
         </p>
         <p>
           <code class="code-block">things = ["cat", "dog", "grandma"]</code>
-        </p>
-        <p>
           <code class="code-block">affection_level = [5, 11, 9]</code>
-        </p>
-        <p>
           <code class="code-block">things.zip(affection_level) { |array| puts array[rand(2)] }</code>
+          <code class="code-block">=> (instead of printing the 3 arrays, prints a random element from each) </code>
         </p>
         <p>
-          <code class="code-block">=> (instead of printing the 3 arrays, prints a random element from each) </code> 
-        </p>
-        <p> 
           Now, if I'm to be completely honest here, I'm actually having a hard time imagining a situation where <code>#zip</code> would come in handy. It seems like if you wanted to access data from multiple arrays, you could just loop through them and reference the same index in each to accomplish the same effect. If you can think of a good application for this method, I would love to hear your idea!
         </p>
 
@@ -178,19 +145,27 @@
       <p id="summary">Pointless ruminations</p>
       <section id="menu">
         <ul id="months">
+          <li><a href="">October</a></li>
           <li><a href="">September</a></li>
         </ul>
       </section>
     </aside>
 
     <footer>
-      <div id="social-media">
-        <!-- add social media icons later, possibly with bootstrap -->
-        <a href="mailto:BroderickSteven@gmail.com"><img src="../imgs/gmail.png" alt="Gmail"></a>
-        <a href="https://github.com/stevula"><img src="../imgs/github.png" alt="GitHub"></a>
-        <a href="https://twitter.com/benissimus"><img src="../imgs/twitter.png" alt="Twitter"></a>
-        <a href="https://www.linkedin.com/in/brodericks"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
-      </div>
+      <ol id="social-media">
+        <li>
+          <a href="mailto:BroderickSteven@gmail.com"><img src="../imgs/gmail.png" alt="Gmail"></a>
+        </li>
+        <li>
+          <a href="https://github.com/stevula"><img src="../imgs/github.png" alt="GitHub"></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/benissimus"><img src="../imgs/twitter.png" alt="Twitter"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/brodericks"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+        </li>
+      </ol>
       <p>Copyright &copy; 2015 Steven Broderick</p>
     </footer>
   </div>

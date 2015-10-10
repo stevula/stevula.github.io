@@ -16,15 +16,16 @@ html, body {
 /* Body */
 body {
   font-family: "Lato", sans-serif;
-  background-color: #f5f8fa;
+  background-color: #e4ecf2;
   min-height: 100%;
 }
 
 /* Header */
-header h1 {
+.main-title {
   text-align: center;
   width: 41%;
   display: inline-block;
+  font-family: "Courier New";
 }
 
 nav {
@@ -32,6 +33,7 @@ nav {
   width: 55%;
   display: inline-block;
   text-transform: uppercase;
+  font-family: "Courier New"
 }
   nav ul {
     width: 100%;
@@ -57,6 +59,17 @@ nav {
 main {
   margin-top: 10%;
 }
+
+a {
+  color: #333333;
+}
+  a:visited {
+    color: #707070;
+  }
+  a:hover {
+    color: #adadad;
+    text-decoration: underline;
+  }
 
 #portrait {
     display: inline-block;
@@ -100,4 +113,8 @@ footer {
     max-height: 35px;
     padding: 0 15px;
   }
+
+#social-media li {
+  display: inline;
+}
 

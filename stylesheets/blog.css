@@ -60,7 +60,7 @@ h2 {
 
 /* Sidebar */
 aside {
-  width: 16%;
+  width: 8em; /*looks weird with % resizing*/
   height: 50%;
   position: fixed;
   top: 31%; right: 5%;
@@ -78,22 +78,16 @@ aside {
     aside a:visited {
       color: white;
     }
-  aside ul {
-    padding-left: 0;
-  }
-  .months li {
-    margin-left: 2em;
-    text-align: left;
-  }
   aside .social-media {
     text-align: center;
     padding: 0;
     background-color: white;
-    left: 0;
+    left: -1px;
     bottom: -3.4em;
     position: absolute;
     width: 100%;
-    border-radius: 5%;
+    border-radius: 2%;
+    border: 1px solid white;
   }
     aside .social-media img {
       width: 25px;
@@ -103,6 +97,14 @@ aside {
     aside .social-media li {
       word-spacing: 1em;
     }
+  aside ul {
+    padding-left: 0;
+  }
+
+.months li {
+  margin-left: 2em;
+  text-align: left;
+}
 
 .portrait {
   width: 116px;
@@ -119,4 +121,12 @@ aside {
 .menu {
   padding: 10px;
   border-top: 1px solid;
+}
+
+/* when main-title fits on one line */
+@media (min-width: 1365px) {
+  aside {
+    height: 50%;
+    top: 40%;
+  }
 }

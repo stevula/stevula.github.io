@@ -78,8 +78,8 @@ a {
     margin: 2.5% auto 5% auto;
 }
   .portrait img {
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    width: 350px;
     display: block;
     border: 1px solid black;
     border-radius: 50%;
@@ -87,7 +87,6 @@ a {
 
 .bio {
   top: 0;
-  display: block;
 }
 
 /* Footer */

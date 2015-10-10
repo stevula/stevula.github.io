@@ -2,7 +2,6 @@
 1. General
 2. Main
 3. Sidebar
-4. Contact Form
 */
 
 /* General */
@@ -106,9 +105,4 @@ aside {
 #menu {
   padding: 10px;
   border-top: 1px solid;
-}
-
-/* General */
-.message-field {
-  display: block;
 }

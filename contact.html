@@ -12,53 +12,54 @@
 </head>
 
 <body>
-  <header>
-    <!-- replace with image later -->
-    <h1 class="main-title">Steven J. Broderick</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
 
-  <main>
+    <header>
+      <h1 class="main-title">Steven Broderick</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <section id="contact">
-        <h1>
-          Contact:
-        </h1>
+    <main>
+        <section class="contact">
+          <h1>
+            Send me a message:
+          </h1>
 
-        <p>
-          Social media and email are currently listed along the bottom of each page. This form won't work until I add some scripting.
-        </p>
+          <p>
+            Social media and email are currently listed along the bottom of each page. This form won't work until I add some scripting.
+          </p>
 
-        <form>
-          <fieldset>
-            <div class="form-left">
-              <label for="firstname">First name:</label>
-              <label for="lastname">Last name:</label>
-              <label for="email">Email:</label>
-              <label for="message">Message: </label>
-            </div>
-            <div class="form-right">
-              <input type="text" name ="firstname" autofocus="autofocus">
-              <input type="text" name ="lastname">
-              <input type="email" name="email">
-              <textarea class="message-field" name="message" rows="10" cols="50"></textarea>
-              <input class="submit" type="submit" value="Submit">
-            </div>
-          </fieldset>
-        </form>
+          <form>
+            <fieldset>
+              <div class="form-left">
+                <label for="firstname">First name:</label>
+                <label for="lastname">Last name:</label>
+                <label for="email">Email:</label>
+                <label for="message">Message: </label>
+              </div>
+              <div class="form-right">
+                <input type="text" name ="firstname" autofocus="autofocus">
+                <input type="text" name ="lastname">
+                <input type="email" name="email">
+                <textarea class="message-field" name="message" rows="10" cols="50"></textarea>
+                <input class="submit" type="submit" value="Submit">
+              </div>
+            </fieldset>
+          </form>
 
-      </section>
-  </main>
+        </section>
+    </main>
+  </div>
 
   <footer>
-    <ol id="social-media">
+    <ol class="social-media">
       <li>
         <a href="mailto:BroderickSteven@gmail.com"><img src="imgs/gmail.png" alt="Gmail"></a>
       </li>
@@ -72,7 +73,7 @@
         <a href="https://www.linkedin.com/in/brodericks"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
       </li>
     </ol>
-    <p>Copyright &copy; 2015 Steven Broderick</p>
+    <p class="legal">Copyright &copy; 2015 Steven Broderick</p>
   </footer>
 
 </body>

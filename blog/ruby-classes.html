@@ -32,27 +32,133 @@
         <div class="blog-post-nav">
           <a href="index.html">Back to blog index</a>
           <a href="#">Newer post</a>
-          <a href="#">Older post</a>
+          <a href="enumberable-methods.html">Older post</a>
         </div>
       </header>
 
       <article class="main-article">
         <header>
-          <h1 class="blog-title">Gitter Done</h1>
-          <p class="date">10 September, 2015</p>
+          <h1 class="blog-title">Ruby Classes</h1>
+          <p class="date">14 October, 2015</p>
         </header>
 
         <p>
-          Artisan kale chips before they sold out cronut. Banh mi keffiyeh ethical, roof party pour-over post-ironic asymmetrical 8-bit VHS cray. IPhone blog tote bag paleo cred, pug lumbersexual. Beard small batch twee organic American Apparel, crucifix High Life freegan ethical pour-over gastropub cronut butcher master cleanse meditation. Pork belly brunch Brooklyn, aesthetic farm-to-table Portland cold-pressed biodiesel Marfa tousled fixie VHS asymmetrical put a bird on it actually. Messenger bag dreamcatcher health goth, Blue Bottle banjo roof party crucifix tofu Marfa PBR biodiesel readymade. Umami flannel crucifix keffiyeh viral, bitters banh mi four dollar toast Portland drinking vinegar.
+          Classes in Ruby, as the name suggests, are categories of objects. Ruby comes with a lot of built-in classes to provide us with useful categories for things such as text, numbers, and data structures. To name a few Ruby classes:
         </p>
         <p>
-          Before they sold out DIY put a bird on it plaid, mumblecore gluten-free post-ironic Brooklyn 3 wolf moon four loko health goth. Paleo art party jean shorts sartorial, migas next level Thundercats fixie ugh Pinterest taxidermy. Kickstarter vegan Echo Park asymmetrical actually Bushwick. Raw denim retro iPhone cliche hella next level. VHS four loko +1 scenester biodiesel, ennui gastropub paleo PBR&B food truck pug. Vinyl next level keytar actually, flannel PBR single-origin coffee hashtag Brooklyn skateboard pork belly iPhone slow-carb. Single-origin coffee pug locavore, blog 3 wolf moon mumblecore Blue Bottle banjo sriracha actually typewriter biodiesel lomo.
+          <code class="code-block">Numeric</code>
+          <code class="code-block">Integer</code>
+          <code class="code-block">Float</code>
+          <code class="code-block">String</code>
+          <code class="code-block">Array</code>
         </p>
         <p>
-          Four dollar toast food truck tofu, Neutra mixtape four loko disrupt fanny pack sustainable chambray ethical. Listicle Tumblr taxidermy bespoke, authentic disrupt squid Blue Bottle. Shabby chic McSweeney's yr, chillwave cliche meh keytar. Bespoke cray letterpress, cardigan mlkshk trust fund XOXO biodiesel banjo fashion axe dreamcatcher meditation. Crucifix trust fund Austin American Apparel next level, dreamcatcher pour-over plaid lumbersexual seitan fanny pack ennui kale chips semiotics. Fixie hashtag flexitarian narwhal. Hella mlkshk cronut Austin 90's, bicycle rights keffiyeh.
+          Classes can also be subclasses of other classes. For example, <code>Integer</code> and <code>Float</code> are subclasses of <code>Numeric</code>.
         </p>
         <p>
-          Seitan mlkshk PBR art party direct trade narwhal Brooklyn post-ironic paleo synth letterpress street art. Tattooed try-hard beard before they sold out wayfarers, letterpress Portland Echo Park. YOLO plaid Etsy typewriter chambray, pour-over stumptown Brooklyn. Messenger bag Schlitz Helvetica fashion axe cred, swag butcher skateboard lomo Pitchfork. Put a bird on it typewriter food truck lo-fi, viral you probably haven't heard of them Kickstarter butcher before they sold out 3 wolf moon semiotics. Polaroid flannel PBR semiotics. Cred American Apparel Intelligentsia narwhal kogi.
+          Besides categorizing objects, classes also define the "properties" and "abilities" of objects. Classes may contain these in their definition or "inherit" them from a parent (or grandparent, or great-grandparent...) class. These "properties", or variables, and "abilities", or methods, are shared by objects of the same class.
+        </p>
+        <p>
+          Because classes give objects properties and abilities, they allow you to create objects that simulate real-world things or concepts. You can define a class that simulates a shopping list, a cash register, an ATM, or even a person. It is said that some have even created the game BINGO with classes, but surely such rumors are madness...
+        </p>
+        <p>
+          Let's say we want to make a class called <code>CrazyRobot</code> (Ruby convention dictates that classes be named in CamelCase). First we define the class with a name:
+        </p>
+        <p>
+          <code class="code-block">class CrazyRobot</code>
+          <code class="code-block"></code>
+          <code class="code-block">end</code>
+        </p>
+        <p>
+          Now we have a class, but it doesn't really do anything yet. We want to make sure that new instance objects of this class can take a "name" and "material" property as arguments and assign them to variables. For that, we use the <code>Class#initialize</code> method:
+        </p>
+        <p>
+          <code class="code-block">class CrazyRobot</code>
+          <code class="code-block">&nbsp;&nbsp;def initialize(name, material)</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;name = name</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;material = material</code>
+          <code class="code-block">&nbsp;&nbsp;end</code>
+          <code class="code-block">end</code>
+        </p>
+        <p>
+          Those variable assignments are actually redundant at the moment, but I just want to demonstrate something with them a bit later. Anyways, now we can create our first instance of <code>CrazyRobot</code>!
+        </p>
+        <p>
+          <code class="code-block">bender = CrazyRobot.new("Bender Bending Rodriguez", "dolomite (40%)")</code>
+        </p>
+        <p>
+          This passes the values in parentheses to the <code>#initialize</code> method, which assigns them to the corresponding variables when it creates the new object. It only does that for this object, not for all future CrazyRobot instances. Those objects will have their own values, depending on the arguments passed to them when <code>Class#new</code> is used..
+        </p>
+        <p>
+          Bender can't do anything right now, so we need to teach him a method. Let's pretend <code>#bendable?</code> is a method that returns <code>true</code> or <code>false</code>.
+        </p>
+        <p>
+          <code class="code-block">class CrazyRobot</code>
+          <code class="code-block">&nbsp;&nbsp;def initialize(name, material)</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;name = name</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;material = material</code>
+          <code class="code-block">&nbsp;&nbsp;end</code>
+          <code class="code-block"></code>
+          <code class="code-block">&nbsp;&nbsp;def bend(object)</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;if object.bendable?</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts "Shut up, baby, I know it!"</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;object = "bent #{object}"</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;else</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts "Bite my shiny, metal ass!</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;end</code>
+          <code class="code-block">&nbsp;&nbsp;end</code>
+          <code class="code-block">end</code>
+        </p>
+        <p>
+          Now we can tell our CrazyRobot to bend an object and, if the object is bendable, he will "fix" it:
+        </p>
+        <p>
+          <code class="code-block">bender = CrazyRobot.new("Bender Bending Rodriguez", "dolomite (40%)")</code>
+          <code class="code-block"></code>
+          <code class="code-block">bender.bend("Good news, everyone")</code>
+          <code class="code-block">&nbsp;&nbsp;=> "Bite my shiny, metal ass!</code>
+          <code class="code-block">bender.bend("Professor Farnsworth")</code>
+          <code class="code-block">&nbsp;&nbsp;=> "Shut up, baby, I know it!"</code>
+          <code class="code-block">&nbsp;&nbsp;=> "bent Professor Farnsworth"</code>
+        </p>
+        <p>
+          Unfortunately for the Professor, <code>#bend</code> is a destructive method.
+        </p>
+        <p>
+          It's highly frowned upon in the bending community, but if Bender decides to self-bend in the privacy of his own home, who are we to judge? Let's create a new class method called <code>self_bend</code> that will take the <code>name</code> variable we created earlier and convert it to "bent (name)".
+        </p>
+        <p>
+          <code class="code-block">class CrazyRobot</code>
+          <code class="code-block">&nbsp;&nbsp;def initialize(name, material)</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;name = name</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;material = material</code>
+          <code class="code-block">&nbsp;&nbsp;end</code>
+          <code class="code-block"></code>
+          <code class="code-block">&nbsp;&nbsp;def self_bend</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;name = "bent #{name}</code>
+          <code class="code-block">&nbsp;&nbsp;end</code>
+          <code class="code-block">end</code>
+        </p>
+        <p>
+          That should raise an error, because the variable <code>name</code> is local to a different method. For all intents and purposes, it does not exist to our new <code>#self_bend</code> method. To make it accessible to other methods in the object instance, we need to expand its scope by making it an instance variable. Instance variables work just like other variables, but their names start with <code>@</code> and their scope is the entire object. In other words, all the object's methods can access the instance variable. Here is the code rewritten with instance variables:
+        </p>
+        <p>
+          <code class="code-block">class CrazyRobot</code>
+          <code class="code-block">&nbsp;&nbsp;def initialize(name, material)</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;@name = name</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;material = material</code>
+          <code class="code-block">&nbsp;&nbsp;end</code>
+          <code class="code-block"></code>
+          <code class="code-block">&nbsp;&nbsp;def self_bend</code>
+          <code class="code-block">&nbsp;&nbsp;&nbsp;&nbsp;@name = "bent #{@name}</code>
+          <code class="code-block">&nbsp;&nbsp;end</code>
+          <code class="code-block">end</code>
+        </p>
+        <p>
+          You may notice that I didn't make the <code>material</code> variable and instance variable. I kept it as a local variable, because no other methods need access to it as the class is currently written. It's important in writing code that information is only shared when necessary. That way, if a method, for example, doesn't work properly, it narrows down the number of places that you have to look for the problem. It might also be the case that I don't want the user or attackers to be able to access information stored in certain variables, like the password to my CrazyRobot's voice module. There are different ways to hide information and encapsulate parts of a program, but limiting the scope of variables is an important part of that.
+        </p>
+        <p>
+          Ruby also has class variables, which are shared by all members of the same class. These are not to be confused with instance variables, because unlike instance variables, objects that have the same <em>class</em> variable will also share the same <em>value</em> for that variable. One reason you might use a class variable is to keep track of how many CrazyRobots you've created. Every time you initialize a new CrazyRobot, you increment a counter that is a class variable. Every instance of CrazyRobot will have access to that counter via the shared class variable. Class variables should be avoided except in very special circumstances, since subclasses also share the class variable, which can lead to undesired behavior.
         </p>
 
       </article>

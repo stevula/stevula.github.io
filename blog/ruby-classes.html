@@ -124,6 +124,7 @@
         <p>
           Unfortunately for the Professor, <code>#bend</code> is a destructive method.
         </p>
+        <img src="../imgs/bender.jpg" alt="Bender and Professor">
         <p>
           It's highly frowned upon in the bending community, but if Bender decides to self-bend in the privacy of his own home, who are we to judge? Let's create a new class method called <code>self_bend</code> that will take the <code>name</code> variable we created earlier and convert it to "bent (name)".
         </p>
@@ -155,7 +156,7 @@
           <code class="code-block">end</code>
         </p>
         <p>
-          You may notice that I didn't make the <code>material</code> variable and instance variable. I kept it as a local variable, because no other methods need access to it as the class is currently written. It's important in writing code that information is only shared when necessary. That way, if a method, for example, doesn't work properly, it narrows down the number of places that you have to look for the problem. It might also be the case that I don't want the user or attackers to be able to access information stored in certain variables, like the password to my CrazyRobot's voice module. There are different ways to hide information and encapsulate parts of a program, but limiting the scope of variables is an important part of that.
+          You may notice that I didn't make the <code>material</code> variable an instance variable. I kept it as a local variable, because no other methods need access to it as the class is currently written. It's important in writing code that information is only shared when necessary. That way, if a method, for example, doesn't work properly, it narrows down the number of places that you have to look for the problem. It might also be the case that I don't want the user or attackers to be able to access information stored in certain variables, like the password to my CrazyRobot's voice module. There are different ways to hide information and encapsulate parts of a program, but limiting the scope of variables is an important part of that.
         </p>
         <p>
           Ruby also has class variables, which are shared by all members of the same class. These are not to be confused with instance variables, because unlike instance variables, objects that have the same <em>class</em> variable will also share the same <em>value</em> for that variable. One reason you might use a class variable is to keep track of how many CrazyRobots you've created. Every time you initialize a new CrazyRobot, you increment a counter that is a class variable. Every instance of CrazyRobot will have access to that counter via the shared class variable. Class variables should be avoided except in very special circumstances, since subclasses also share the class variable, which can lead to undesired behavior.

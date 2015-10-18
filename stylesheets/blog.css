@@ -124,7 +124,16 @@ aside {
 }
 
 /* when main-title fits on one line */
-@media (min-width: 1365px) {
+@media (max-width: 682px) {
+  main {
+    width: 100%;
+  }
+  aside {
+    display: none;
+  }
+}
+
+@media (min-width: 682px) {
   aside {
     height: 50%;
     top: 40%;

@@ -6,6 +6,7 @@ MAJOR
 MINOR
 - make placement consistent across pages
 - fix the footer on blog index
+- fix code formatting on blog posts
 
 POSTPONE
 - add real photos to index and blog sidebar

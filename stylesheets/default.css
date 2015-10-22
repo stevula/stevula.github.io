@@ -7,6 +7,7 @@ Code is broken up into sections based on order of appearance in the DOM:
 4. Main
 5. Footer
 6. Contact Form
+7. Projects
 */
 
 /* General */
@@ -140,4 +141,22 @@ label, input {
 
 .submit {
   margin-left: 85%;
+}
+
+/* Projects */
+
+.project-gallery {
+  /*vertical-align: top;*/
+
+}
+
+.project {
+  display: inline-block;
+  max-width: 225px;
+  vertical-align: top;
+}
+
+.project-icon {
+  height: 200px;
+  width: 200px;
 }

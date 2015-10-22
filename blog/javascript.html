@@ -43,9 +43,61 @@
         </header>
 
         <p>
-          Artisan kale chips before they sold out cronut. Banh mi keffiyeh ethical, roof party pour-over post-ironic asymmetrical 8-bit VHS cray. IPhone blog tote bag paleo cred, pug lumbersexual. Beard small batch twee organic American Apparel, crucifix High Life freegan ethical pour-over gastropub cronut butcher master cleanse meditation. Pork belly brunch Brooklyn, aesthetic farm-to-table Portland cold-pressed biodiesel Marfa tousled fixie VHS asymmetrical put a bird on it actually. Messenger bag dreamcatcher health goth, Blue Bottle banjo roof party crucifix tofu Marfa PBR biodiesel readymade. Umami flannel crucifix keffiyeh viral, bitters banh mi four dollar toast Portland drinking vinegar.\
+          One of the key differences between JavaScript and Ruby is how variables are scoped.
         </p>
 
+        <p>
+          In Ruby, we have several different levels of variable scope:
+        </p>
+
+        <code class="code-block">foobar  =>  a local variable</code>
+        <code class="code-block">@foobar  =>  an instance variable</code>
+        <code class="code-block">@@foobar  =>  a class variable</code>
+        <code class="code-block">$foobar  =>  a global variable</code>
+        <code class="code-block">FOOBAR  =>  a constant (also global)</code>
+
+        <p>
+          In JavaScript, there are only two levels of variable scope:
+        </p>
+
+        <code class="code-block">var foobar  =>  a local variable (definition)</code>
+        <code class="code-block">foobar  =>  a global variable (definition)</code>
+        <code class="code-block">=>  note: both are referenced the same way by typing "foobar", but they must be defined with the different syntaxes above</code>
+
+        <p>
+          Ruby and JavaScript also mean something different when they consider a variable "local". In Ruby, a local variable can only be accessed from within the method, loop, or block in which it was declared.
+        </p>
+
+        <code class="code-block">[1,2,3].each do |x|</code>
+        <code class="code-block">&nbsp;&nbsp;print x</code>
+        <code class="code-block">end</code>
+        <code class="code-block">=> "123"</code>
+        <code class="code-block">print x</code>
+        <code class="code-block">=> undefined local variable or method 'x'</code>
+
+        <p>
+          <code>x</code> cannot be accessed from outside the block in the example above.
+        </p>
+
+        <p>
+          In JavaScript, local variables only exist inside of functions. Local variables can be accessed from within the function in which they were defined, including from any functions nested inside of that function. As in Ruby, arguments are also treated as local variables in the function/method to which they are passed.
+        </p>
+
+        <code class="code-block">function printInConsole(string) {</code>
+        <code class="code-block">&nbsp;&nbsp;console.log(string);</code>
+        <code class="code-block">}</code>
+        <code class="code-block">printInConsole("Hello, world");</code>
+        <code class="code-block">=> "Hello, world!"</code>
+        <code class="code-block">console.log(string);</code>
+        <code class="code-block">=> ReferenceError: string is not defined</code>
+
+        <p>
+          <code>string</code> cannot be accessed from outside the function in the example above.
+        </p>
+
+        <p>
+          As you can see, JavaScript bases scope on functions, whereas Ruby scope is based mainly on objects and methods. That shouldn't be surprising, since Ruby was built from the ground up as an extremely object-oriented language. In some ways the concept of scope is much simpler in JavaScript, but don't let that fool you. Scope can get pretty complicated once you consider closures and hoisting - two special features of JavaScript that pertain to variables and scope.
+        </p>
       </article>
     </main>
 

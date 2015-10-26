@@ -6,22 +6,28 @@ table {
   padding: 5px;
 }
 
+
 .directions {
   display: inline-block;
   vertical-align: top;
 }
 
-td {
-  padding: 2px;
+.counter {
+  background: black;
+  color: lime;
+  font-family: "Courier New";
+  text-align: center;
+  width: 25%;
 }
 
-button {
-  background-color: teal;
+.cell {
+  background-color: black;
   border: 1px solid black;
-  border-radius: 3%;
+  border-radius: 5%;
   color: transparent;
   font-size: 4em;
   font-family: Courier;
+  font-weight: bold;
   height: 5rem;
   text-align: center;
   width: 5rem;
@@ -29,9 +35,51 @@ button {
 
 .revealed {
   background-color: white;
-  color: black;
 }
 
-.game_over {
-  color: red !important;
+.unfound {
+  color: yellow;
+}
+
+.marked {
+  background-color: red;
+}
+
+.mine {
+  color: red;
+}
+
+.zero {
+  color: #909090; /* gray */
+}
+.one {
+  color: blue;
+}
+
+.two {
+  color: green;
+}
+
+.three {
+  color: teal;
+}
+
+.four {
+  color: purple;
+}
+
+.five {
+  color: salmon;
+}
+
+.six {
+  color: fuchsia;
+}
+
+.seven {
+  color: orange;
+}
+
+.eight {
+  color: pink;
 }

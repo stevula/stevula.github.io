@@ -1,3 +1,8 @@
+.left {
+  display: inline-block;
+  width: 25em;
+}
+
 table {
   background-color: gray;
   border: 2px solid black;
@@ -6,18 +11,35 @@ table {
   padding: 5px;
 }
 
+.difficulty {
+  text-align: left;
+  width: 25em;
+}
+
+input {
+  margin: 0.5em;
+}
+
+.reset {
+  position: relative;
+  bottom: 2.5em;
+  left: 8em;
+}
 
 .directions {
   display: inline-block;
+  padding: 2em;
   vertical-align: top;
+  width: 25em;
 }
 
 .counter {
   background: black;
   color: lime;
   font-family: "Courier New";
+  margin: 0.5em auto;
   text-align: center;
-  width: 25%;
+  width: 15rem;
 }
 
 .cell {

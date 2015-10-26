@@ -30,54 +30,70 @@
     <main>
       <section class="project-demo">
         <h1>Minefield</h1>
-        <table>
-          <tbody id="table">
-            <!-- row 0 -->
-            <tr>
-              <td><button id="1A" class="none">1</button></td>
-              <td><button>2</button></td>
-              <td><button>3</button></td>
-              <td><button>4</button></td>
-              <td><button>5</button></td>
-            </tr>
+        <form id="difficulty">
+	        <fieldset>
+	          <legend>Difficulty</legend>
+	            <input type="radio" name="mine-chance" checked="checked">Easy
+	            <input type="radio" name="mine-chance">Medium
+	            <input type="radio" name="mine-chance">Hard
+	        </fieldset>
+	      </form>
 
-            <!-- row 1 -->
-            <tr>
-              <td><button>6</button></td>
-              <td><button>7</button></td>
-              <td><button>8</button></td>
-              <td><button>9</button></td>
-              <td><button>10</button></td>
-            </tr>
+	      <button id="reset">New Game</button>
 
-            <!-- row 2 -->
-            <tr>
-              <td><button>11</button></td>
-              <td><button>12</button></td>
-              <td><button>13</button></td>
-              <td><button>14</button></td>
-              <td><button>15</button></td>
-            </tr>
+	      <table>
+	        <tbody id="board">
+	          <!-- row 0 -->
+	          <tr>
+	            <td><button class="cell">1</button></td>
+	            <td><button class="cell">2</button></td>
+	            <td><button class="cell">3</button></td>
+	            <td><button class="cell">4</button></td>
+	            <td><button class="cell">5</button></td>
+	          </tr>
 
-            <!-- row 3 -->
-            <tr>
-              <td><button>16</button></td>
-              <td><button>17</button></td>
-              <td><button>18</button></td>
-              <td><button>19</button></td>
-              <td><button>20</button></td>
-            </tr>
+	          <!-- row 1 -->
+	          <tr>
+	            <td><button class="cell">6</button></td>
+	            <td><button class="cell">7</button></td>
+	            <td><button class="cell">8</button></td>
+	            <td><button class="cell">9</button></td>
+	            <td><button class="cell">10</button></td>
+	          </tr>
 
-            <!-- row 4 -->
-            <tr>
-              <td><button>21</button></td>
-              <td><button>22</button></td>
-              <td><button>23</button></td>
-              <td><button>24</button></td>
-              <td><button>25</button></td>
-            </tr>
-          </tbody>
-        </table>
+	          <!-- row 2 -->
+	          <tr>
+	            <td><button class="cell">11</button></td>
+	            <td><button class="cell">12</button></td>
+	            <td><button class="cell">13</button></td>
+	            <td><button class="cell">14</button></td>
+	            <td><button class="cell">15</button></td>
+	          </tr>
+
+	          <!-- row 3 -->
+	          <tr>
+	            <td><button class="cell">16</button></td>
+	            <td><button class="cell">17</button></td>
+	            <td><button class="cell">18</button></td>
+	            <td><button class="cell">19</button></td>
+	            <td><button class="cell">20</button></td>
+	          </tr>
+
+	          <!-- row 4 -->
+	          <tr>
+	            <td><button class="cell">21</button></td>
+	            <td><button class="cell">22</button></td>
+	            <td><button class="cell">23</button></td>
+	            <td><button class="cell">24</button></td>
+	            <td><button class="cell">25</button></td>
+	          </tr>
+	        </tbody>
+	      </table>
+
+	      <div class="counter">
+	        <h1>Mines</h1>
+	        <span id="counter">0</span>
+	      </div>
 
         <section class="directions">
           <h1>Directions</h1>

@@ -6,8 +6,6 @@ Code is broken up into sections based on order of appearance in the DOM:
 3. Header
 4. Main
 5. Footer
-6. Contact Form
-7. Projects
 */
 
 /* General */
@@ -115,4 +113,3 @@ footer {
 .legal {
   font-size: 0.5em;
 }
-

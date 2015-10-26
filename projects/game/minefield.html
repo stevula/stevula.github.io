@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="../../stylesheets/normalize.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/projects.css">
   <link rel="stylesheet" type="text/css" href="minefield.css">
   <script src="minefield.js"></script>
 </head>
@@ -28,9 +29,9 @@
     </header>
 
     <main>
-      <section class="project-demo">
-        <h1>Minefield</h1>
-        <form id="difficulty">
+      <h1>Minefield</h1>
+      <div class="left">
+        <form id="difficulty" class="difficulty">
 	        <fieldset>
 	          <legend>Difficulty</legend>
 	            <input type="radio" name="mine-chance" checked="checked">Easy
@@ -39,7 +40,11 @@
 	        </fieldset>
 	      </form>
 
-	      <button id="reset">New Game</button>
+	      <button class="reset" id="reset">New Game</button>
+
+        <div class="counter">
+          <span id="counter">0</span> Mines
+        </div>
 
 	      <table>
 	        <tbody id="board">
@@ -89,33 +94,28 @@
 	          </tr>
 	        </tbody>
 	      </table>
+      </div>
 
-	      <div class="counter">
-	        <h1>Mines</h1>
-	        <span id="counter">0</span>
-	      </div>
-
-        <section class="directions">
-          <h1>Directions</h1>
-          <p>
-            Click on a cell to uncover its value.
-          </p>
-          <p>
-            Safe tiles are marked with numbers. Mines are marked with "X".
-          </p>
-          <p>
-            The number revealed will tell you how many mines are touching.
-          </p>
-          <p>
-            If you click on a mine ("X"), you lose.
-          </p>
-          <p>
-            Uncover all of the safe tiles to win.
-          </p>
-          <p>
-            Refresh the page to start a new board.
-          </p>
-        </section>
+      <section class="directions">
+        <h1>Directions</h1>
+        <p>
+          Click on a cell to uncover its value.
+        </p>
+        <p>
+          Safe tiles are marked with numbers. Mines are marked with "X".
+        </p>
+        <p>
+          The number revealed will tell you how many mines are touching.
+        </p>
+        <p>
+          If you click on a mine ("X"), you lose.
+        </p>
+        <p>
+          Mark suspected mines with right-click.
+        </p>
+        <p>
+          Uncover all of the safe tiles to win.
+        </p>
       </section>
     </main>
   </div>

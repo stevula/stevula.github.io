@@ -1,0 +1,11 @@
+/* Projects */
+.project-item {
+  display: inline-block;
+  max-width: 225px;
+  vertical-align: top;
+}
+
+.project-icon {
+  height: 200px;
+  width: 200px;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Steven Broderick | Blog</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Steven Broderick">
+  <meta name="description" content="Personal Website for Steven Broderick">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="main-title">Steven Broderick</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../projects/index.html">Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <div class="blog-post-nav">
+          <a href="index.html">Back to blog index</a>
+          <a href="#">Newer post</a>
+          <a href="javascript.html">Older post</a>
+        </div>
+      </header>
+
+      <article class="main-article">
+        <header>
+          <h1 class="blog-title">Regular Expressions</h1>
+          <p class="date">30 October, 2015</p>
+        </header>
+
+        <p>
+          Regular expressions (AKA Regexes or RegExps) are a powerful syntax for matching string patterns in programming languages and text editors. Because they are so incredibly useful and widely used, it is worth any new programmer's time to learn what they can do, even if you don't have the time to memorize the syntax just yet.
+        </p>
+        <p>
+          If you're reading this, chances are you're in my DBC cohort. Remember when we had to make a list of students in our class for that solo challenge in Ruby? As you may recall, there was a list of students in the Canvas "People" tab. It looks nice and tabular in Canvas, but it didn't exactly provide a neatly formatted array of names for your Ruby code:
+        </p>
+
+        <img src="imgs/cohortians.png" alt="list of people in cohort from Canvas">
+
+        <p>
+          When I copy/paste that into Sublime Text, it looks like this:
+        </p>
+
+        <img src="imgs/cohortians-copypaste.png" alt="copy/pasted list from Canvas">
+
+        <p>
+          So, we've got a couple problems here:
+        </p>
+
+        <ol>
+          <li>The student names appear twice (and not always with the same spelling)</li>
+          <li>The cohort name appears on every third line, which is useless to us</li>
+          <li>The user-type "Student" appears on every fourth line, which is also useless to us</li>
+        </ol>
+
+        <p>
+          To get a list of names, you might say we just want to capture every fourth line, starting with line 1. Luckily, we can use a RegEx to do this via Sublime's "Find" and "Replace" functions.
+        </p>
+
+        <ol>
+          <li>Enter <code>.*\n</code> in the "Find" field to select each line individually</li>
+
+            <ul>
+              <li>
+                <code>.</code> matches any single character:<br>
+                <img src="imgs/regex-char-selected.png" alt="each character selected">
+              </li>
+              <li><code>+</code> operator modifies the preceding RegEx (<code>.</code>) to match all consecutive characters, instead of just single ones.</li>
+              <li><code>\n</code> matches newline characters (the end of each line).</li>
+              <li>
+                Together, these create an expression that matches a series of all characters from the start to the end of the line:<br>
+                <img src="imgs/regex-line-selected.png" alt="each line selected">
+              </li>
+            </ul>
+
+          <li>With a slight modification, we can make it grab each group of four lines: <code>(.*\n){4}</code></li>
+
+            <ul>
+              <li>Enclose the expression from step 1 in parentheses to make sure the line-selector gets evaluated first: <code>(.*\n)</code></li>
+              <li>
+                Add <code>{4}</code> to select every four of that pattern:<br>
+                <img src="imgs/regex-fourlines-selected.png" alt="each group of four lines selected">
+              </li>
+            </ul>
+
+          <li>
+            You now (conveniently) have a cursor on every fourth line, which you can use to copy/paste the name of the students or easily delete the unnecessary lines:<br>
+            <img src="imgs/regex-fourlines-cursor.png" alt="cursor on every four lines">
+          </li>
+        </ol>
+
+        <p>
+          You can also use RegExes to "comma-ify" numbers. Let's say we have the number <code>10000</code> and we want to make it look like <code>10,000</code>. It's pretty easy if the number only needs one comma:
+        </p>
+
+        <ol>
+          <li>
+            Enter <code>\d</code> in the "Find" field to select each digit:<br>
+            <img src="imgs/regex-digits-selected.png" alt="each digit selected">
+          </li>
+          <li>
+            Add a <code>{3}</code> to modify the previous RegExp to match groups of three digits: <code>\d{3}</code>:<br>
+            <img src="imgs/regex-3digits-selected.png" alt="first 3 digits selected">
+          </li>
+          <li>
+            Enclose the previous RegExp in parentheses and add a <code>$</code> to match from the end instead of the beginning of the line: <code>(\d{3})$</code><br>
+            <img src="imgs/regex-3digits-end-selected.png" alt="last 3 digits selected">
+          </li>
+          <li>
+            In the "Replace" field, enter <code>,$1</code>.
+
+            <ul>
+              <li>The <code>,</code> is just a regular comma character (",").</li>
+              <li>The <code>$1</code> captures the matched string from the "Find" field ("000").</li>
+              <li>
+                Together, these replace the original string with a comma + original string:<br>
+                <img src="imgs/regex-comma-number.png" alt="original number with comma added">
+              </li>
+            </ul>
+
+          </li>
+        </ol>
+
+        <p>
+          Unfortunately, it's a bit trickier to add commas to a larger number, like 1000000. The RegEx above only matches the <em>first</em> set of three digits from the end, but this would require it to match <em>every</em> set of three digits.
+        </p>
+        <p>
+          If you're interested in figuring out how to do that, there is a fantastic tutorial on RegExes on the <a href="http://ruby.bastardsbook.com/chapters/regexes/">Bastard's Book of Ruby website</a>. Once you're familiar with how they work, you might also appreciate this <a href="http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/">RegEx cheat-sheet</a> made by the same author. For a more comprehensive reference on RegExes, check out <a href="http://www.regular-expressions.info/">Regular-Expressions.info</a>.
+        </p>
+
+      </article>
+    </main>
+
+    <aside>
+      <div class="portrait">
+        <img src="../imgs/portrait.png" alt="avatar">
+      </div>
+      <p class="summary">Pointless ruminations</p>
+      <section class="menu">
+        <ul class="months">
+          <li><a href="">October</a></li>
+          <li><a href="">September</a></li>
+        </ul>
+      </section>
+      <ol class="social-media">
+        <li>
+          <a href="mailto:BroderickSteven@gmail.com"><img src="../imgs/gmail.png" alt="Gmail"></a>
+        </li>
+        <li>
+          <a href="https://github.com/stevula"><img src="../imgs/github.png" alt="GitHub"></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/benissimus"><img src="../imgs/twitter.png" alt="Twitter"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/brodericks"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+        </li>
+      </ol>
+    </aside>
+
+    <footer>
+      <ol class="social-media">
+        <li>
+          <a href="mailto:BroderickSteven@gmail.com"><img src="../imgs/gmail.png" alt="Gmail"></a>
+        </li>
+        <li>
+          <a href="https://github.com/stevula"><img src="../imgs/github.png" alt="GitHub"></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/benissimus"><img src="../imgs/twitter.png" alt="Twitter"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/brodericks"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+        </li>
+      </ol>
+      <p class="legal">Copyright &copy; 2015 Steven Broderick</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

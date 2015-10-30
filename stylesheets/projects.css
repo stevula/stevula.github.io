@@ -1,6 +1,7 @@
 /* Projects */
 .project-item {
   display: inline-block;
+  margin: 1em;
   max-width: 225px;
   vertical-align: top;
 }

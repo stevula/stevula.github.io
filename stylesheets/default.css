@@ -9,6 +9,18 @@ Code is broken up into sections based on order of appearance in the DOM:
 */
 
 /* General */
+code {
+  background: black;
+  color: lime;
+  text-align: left;
+}
+
+.code-block {
+  display: block;
+  width: 65%;
+  margin: 0 auto;
+  padding: 0.5em;
+}
 
 
 /* Body */

@@ -5,17 +5,6 @@
 */
 
 /* General */
-code {
-  background: black;
-  color: lime;
-}
-
-.code-block {
-  display: block;
-  width: 90%;
-  margin: 0 auto;
-  padding: 0.5em;
-}
 
 /* Main */
 main {

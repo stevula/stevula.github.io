@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Steven Broderick | Cheat-Sheet</title>
+  <meta name="description" content="Personal Website for Steven Broderick">
+  <meta name="author" content="Steven Broderick">
+  <link rel="stylesheet" type="text/css" href="../../stylesheets/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/projects.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/cheat-sheet.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="main-title">Steven Broderick</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Dev Bootcamp Cheat-Sheet: Centering in CSS</h1>
+      <p>
+        Centering things in CSS can be a pain in the ass. That's why I decided to make a handy-dandy cheat-sheet on the topic. These aren't the only ways to center things, but I think I've included the most common methods. I have encountered most of these techniques previously in my learning, but I would like to credit <a href="https://css-tricks.com/centering-css-complete-guide/">CSS-Tricks</a>, <a href="http://vanseodesign.com/css/vertical-centering/">Vanseo Design</a>, and the <a href="http://davidwalsh.name/css-vertical-center-flexbox">blog of David Walsh</a> for teaching me a couple new ones and clarifying the limitations of each technique for me.
+      </p>
+
+      <ul class="cheat-sheet-section">
+        <p>When attempting to center an element, consider these parameters. I'm only going to cover the first three for the purposes of this cheat-sheet.</p>
+        <li>
+          <strong>Horizontal</strong> vs <strong>vertical</strong> alignment
+        </li>
+        <li>
+          <strong>Inline</strong> vs <strong>block</strong> element
+        </li>
+        <li>
+          <strong>Static/relative</strong> vs <strong>fixed/absolute</strong> positioning
+        </li>
+        <li>
+          <strong>Single</strong> vs <strong>multiple</strong> elements
+        </li>
+      </ul>
+
+      <section class="cheat-sheet-section">
+        <h1>Horizontal Alignment</h1>
+        <p>
+          Horizontal centering tends to be the simpler problem.
+        </p>
+        <p>
+          <strong>Text or other inline elements:</strong>
+        </p>
+        <code class="code-block">
+          set parent element:
+        </code>
+        <code class="code-block">
+          text-align: center;
+        </code>
+
+        <p>
+          <strong>Block elements (static/relative):</strong>
+        </p>
+        <p>
+          <em>This only works when the object has a declared width.</em>
+        </p>
+        <code class="code-block">
+          margin: 0 auto;
+        </code>
+
+        <p>
+          <strong>Block elements (fixed/absolute):</strong>
+        </p>
+        <code class="code-block">
+          left: 50%;
+        </code>
+        <code class="code-block">
+          margin-left: (-50% of element width);
+        </code>
+      </section>
+
+      <section class="cheat-sheet-section">
+        <h1>Vertical Alignment</h1>
+        <p>
+          In contrast to horizontal centering, vertical centering is evil incarnate. Counterintuitively, the vertical-align property is rarely the appropriate choice.
+        </p>
+        <p>
+          <strong>A single line of text:</strong>
+        </p>
+        <code class="code-block">
+          set parent element:
+        </code>
+        <code class="code-block">
+          line-height: (parent element height);
+        </code>
+
+        <p>
+          <strong>A single line of text:</strong>
+        </p>
+        <code class="code-block">
+          set parent element:
+        </code>
+        <code class="code-block">
+          line-height: (parent element height);
+        </code>
+
+        <p>
+          <strong>Text and other inline elements</strong>
+        </p>
+        <code class="code-block">
+          set parent element:
+        </code>
+        <code class="code-block">
+          padding: 50% 0;
+        </code>
+
+        <p>
+          <strong>Simulate a table (tables cells have simpler vertical alignment):</strong>
+        </p>
+        <code class="code-block">
+          set parent element:
+        </code>
+        <code class="code-block">
+          display: table;
+        </code>
+        <code class="code-block">
+          <br>
+        </code>
+        <code class="code-block">
+          set child element:
+        </code>
+        <code class="code-block">
+          display: table-cell;
+        </code>
+        <code class="code-block">
+          vertical-align: middle;
+        </code>
+
+        <p>
+          <strong>Flexbox for inline elements:</strong>
+        </p>
+        <code class="code-block">
+          set parent element:
+        </code>
+        <code class="code-block">
+          display: flex;
+        </code>
+        <code class="code-block">
+          align-items: center;
+        </code>
+
+        <p>
+          <strong>Block elements with known height:</strong>
+        </p>
+        <code class="code-block">
+          top: 50%;
+        </code>
+        <code class="code-block">
+          margin-top: (-50% of element width);
+        </code>
+        <p>
+          <strong>Block elements with unknown/dynamic height:</strong>
+        </p>
+        <code class="code-block">
+          position: absolute;
+        </code>
+        <code class="code-block">
+          top: 50%;
+        </code>
+        <code class="code-block">
+          transform: translateY(-50%);
+        </code>
+
+        <p>
+          <strong>Flexbox for block elements:</strong>
+        </p>
+        <code class="code-block">
+          set parent element:
+        </code>
+        <code class="code-block">
+          display: flex;
+        </code>
+        <code class="code-block">
+          flex-direction: column;
+        </code>
+        <code class="code-block">
+          justify-content: center;
+        </code>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <ol class="social-media">
+      <li>
+        <a href="mailto:BroderickSteven@gmail.com"><img src="../imgs/gmail.png" alt="Gmail"></a>
+      </li>
+      <li>
+        <a href="https://github.com/stevula"><img src="../imgs/github.png" alt="GitHub"></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/benissimus"><img src="../imgs/twitter.png" alt="Twitter"></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/brodericks"><img src="../imgs/linkedin.png" alt="LinkedIn"></a>
+      </li>
+    </ol>
+    <p class="legal">Copyright &copy; 2015 Steven Broderick</p>
+  </footer>
+
+</body>
+</html>

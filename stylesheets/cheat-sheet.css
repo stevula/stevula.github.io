@@ -1,0 +1,12 @@
+.cheat-sheet-section {
+  background-color: white;
+  margin: 1em;
+  padding: 1em;
+}
+  .cheat-sheet-section ul {
+  }
+  .cheat-sheet-section li {
+    margin: 0 auto;
+    width: 50%;
+    text-align: left;
+  }

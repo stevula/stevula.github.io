@@ -1,16 +1,13 @@
 MAJOR
 - make responsive
 - make it look better on large screen
-- add copy to index
 
 MINOR
 - make placement consistent across pages
-- fix the footer on blog index
 - fix code formatting on blog posts
 
 POSTPONE
 - add real photos to index and blog sidebar
 - do something with sidebar links?
-- green monospace on black?
 - make name link to index?
 - add hover effect to social media icons

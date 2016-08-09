@@ -45,3 +45,8 @@ colors:
 
 kramdown:
   auto_ids:  false
+
+# Collections
+collections:
+  projects:
+    output: true

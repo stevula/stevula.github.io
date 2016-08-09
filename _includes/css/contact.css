@@ -88,6 +88,14 @@ textarea.form-control::-moz-placeholder { /* Firefox 19+ */
 
 
 /* social media icons (fontawesome) */
+#contact a {
+  color: rgb(85, 26, 139);
+}
+
+#contact a:hover {
+  color: rgb(59, 9, 97);
+}
+
 .social {
     font-size: 42px;
     text-align: center;
@@ -95,7 +103,6 @@ textarea.form-control::-moz-placeholder { /* Firefox 19+ */
 
 .social .fa {
     margin: 0 0.25em;
-    color: rgb(85, 26, 139);
 }
 
 .social .fa:hover,

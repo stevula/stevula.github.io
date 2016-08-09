@@ -30,5 +30,6 @@
     opacity: 0;
     -webkit-transition: visibility opacity 0.2s;
     background-color: rgb(85, 26, 139);
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }

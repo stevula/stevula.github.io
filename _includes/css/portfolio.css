@@ -19,15 +19,16 @@
 }
 
 .portfolio-item-details {
-     position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(29, 106, 154, 0.72);
-      color: #fff;
-      visibility: hidden;
-      opacity: 0;
-      -webkit-transition: visibility opacity 0.2s;
-      background-color: rgb(85, 26, 139);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility opacity 0.2s;
+    background-color: rgb(85, 26, 139);
+    overflow-x: scroll;
 }

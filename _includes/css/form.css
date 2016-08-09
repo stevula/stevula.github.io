@@ -9,6 +9,12 @@ form {
   margin:50px auto;
 }
 
+/* override bootstrap */
+form .row,
+form .form-group {
+  margin-bottom: 0;
+}
+
 input.form-control, 
 textarea.form-control {
   color: #2e2e2e;
@@ -57,4 +63,24 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: black;
   color: white;
+}
+
+/* vendor-specific placeholder text */
+
+input.form-control::-webkit-input-placeholder,
+textarea.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #2e2e2e;
+}
+
+input.form-control::-moz-placeholder,
+textarea.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #2e2e2e;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: #2e2e2e;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #2e2e2e;
 }

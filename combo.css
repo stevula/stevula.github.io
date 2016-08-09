@@ -5,4 +5,12 @@
 {% include css/main.css %}
 {% include css/form.css %}
 
+/* social media icons (fontawesome) */
+.social {
+    font-size: 42px;
+    text-align: center;
+}
 
+.social .fa {
+    margin: 0 0.25em;
+}

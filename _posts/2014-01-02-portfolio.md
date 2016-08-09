@@ -1,7 +1,12 @@
 ---
 title: "Portfolio"
-bg: turquoise  #defined in _config.yml, can use html color like '#0fbfcf'
-color: white   #text color
-fa-icon: paint-brush
+bg: green
+color: white
+fa-icon: code
 ---
 
+project 1
+
+project 2
+
+project 3

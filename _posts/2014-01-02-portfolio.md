@@ -16,7 +16,11 @@ fa-icon: code
           </h2>
           <div class="portfolio-item-links">
               <a href="{{ project.external_url }}">live</a>
-              <a href="{{ project.github_url }}">code</a>
+              {% if project.github_url %}
+                  <a href="{{ project.github_url }}">source</a>
+              {% else %}
+                  closed-source :(
+              {% endif %}
           </div>
           <p>
             {{project.description}}

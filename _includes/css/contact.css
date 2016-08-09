@@ -107,7 +107,7 @@ textarea.form-control::-moz-placeholder { /* Firefox 19+ */
 
 .social .fa:hover,
 .social .fa:focus {
-    color: #f8f8f8;
+    color: rgb(59, 9, 97);
 }
 
 .social a:hover,

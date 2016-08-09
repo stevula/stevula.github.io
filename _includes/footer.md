@@ -1,1 +1,1 @@
-This site built in Jekyll, adapted from [SinglePaged theme](https://github.com/t413/SinglePaged) with heavy customization ([source](https://github.com/stevula/stevula.github.io))
+This site built in Jekyll, using [SinglePaged theme](https://github.com/t413/SinglePaged) as a starting point. ([source](https://github.com/stevula/stevula.github.io))

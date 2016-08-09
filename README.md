@@ -1,3 +1,1 @@
-
-This is a compressed-commit version of
-[github.com/t413/SinglePaged](https://github.com/t413/SinglePaged)
+Personal website for Steven Broderick, web developer. Built in Jekyll using modified [SinglePaged](github.com/t413/SinglePaged) template.

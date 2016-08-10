@@ -4,4 +4,5 @@
 {% include css/skeleton.css %}
 {% include css/main.css %}
 {% include css/portfolio.css %}
+{% include css/resume.css %}
 {% include css/contact.css %}

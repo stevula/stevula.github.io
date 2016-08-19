@@ -17,7 +17,7 @@ markdown: kramdown
 # Site settings
 title: Steven Broderick
 email: BroderickSteven@gmail.com
-keywords: web developer, software engineer, Steven, Broderick, San Francisco, Ruby on Rails, AngularJS, JavaScript, Ruby, Python, Django, Sinatra, TDD
+keywords: web developer, software engineer, Steven, Broderick, San Francisco, Ruby on Rails, AngularJS, JavaScript, Ruby, jQuery, Python, Django, Sinatra, TDD
 description: Personal website and web developer portfolio for Steven Broderick
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://stevula.github.io"
@@ -28,8 +28,8 @@ gitlab_username: stevula
 bitbucket_username: stevula
 linkedin_username: brodericks
 source_link: "https://github.com/stevula/stevula.github.io"
-# favicon:     "img/favicon.ico"
-# touch_icon:  "img/apple-touch-icon.png"
+favicon:     ""
+touch_icon:  ""
 google_analytics_key: UA-72933903-1
 
 

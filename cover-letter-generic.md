@@ -7,7 +7,7 @@ layout: cover-letter
 <h2>Hello, my name is Steven and I want to work with you.</h2>
 
 <div class="row">
-  <section class="me col-sm-6 left-align">
+  <section class="me col-sm-6">
     <h3>What I have to offer</h3>
     <ul>
       <li>
@@ -16,7 +16,7 @@ layout: cover-letter
     </ul>
   </section>
 
-  <section class="you col-sm-6 left-align">
+  <section class="you col-sm-6">
     <h3>What I'm looking for</h3>
     <ul>
       <li>
